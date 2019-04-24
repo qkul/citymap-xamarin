@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CityMap</string>
+
+    <string name="activity_cities_title">Cities</string>
+</resources>
