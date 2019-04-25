@@ -5,8 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MonkeyCache.SQLite" Version="1.2.0-beta" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="Xam.Plugin.Connectivity" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MonkeyCache.SQLite">
+      <HintPath>..\..\..\..\.nuget\packages\monkeycache.sqlite\1.2.0-beta\lib\monoandroid81\MonkeyCache.SQLite.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

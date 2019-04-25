@@ -19,6 +19,7 @@ namespace CityMapXamarin.Android
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            new CityMapXamarin.App().Initialize();
             StartActivity(new Intent(this, typeof(CityActivity)));
             Finish();
         }
