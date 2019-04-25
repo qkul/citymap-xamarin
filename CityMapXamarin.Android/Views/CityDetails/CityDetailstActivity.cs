@@ -19,11 +19,8 @@ namespace CityMapXamarin.Android.Views.CityDetails
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
             SetContentView(Resource.Layout.activity_city_details);
-
             LoadNavigationParameters();
-
             SetupToolbar();
             SetupUI();
         }
@@ -40,8 +37,16 @@ namespace CityMapXamarin.Android.Views.CityDetails
 
         private void SetupToolbar()
         {
-            var contraction = SupportActionBar;
+            var contraction = SupportActionBar;     
+            contraction.SetDisplayHomeAsUpEnabled(true);
+            contraction.SetDisplayShowHomeEnabled(true);
+        
             contraction.Title = _cityName;
+        }
+        public override bool OnSupportNavigateUp()
+        {
+            OnBackPressed();
+            return true;
         }
 
         private void SetupUI()

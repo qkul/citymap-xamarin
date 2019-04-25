@@ -25,15 +25,10 @@ namespace CityMapXamarin.Android.Views.Cities
         protected override async void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
             SetContentView(Resource.Layout.activity_cities);
-
             _progressDialog = CreateProgressDialog();
-
             SetupAdapter();
-
             SetupRecyclerView();
-
             await LoadDataAsync();
         }
 
