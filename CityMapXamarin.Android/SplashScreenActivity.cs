@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using CityMapXamarin.Android.Views.Cities;
+using CityMapXamarin.Android.Views.CitiesMap;
 
 namespace CityMapXamarin.Android
 {

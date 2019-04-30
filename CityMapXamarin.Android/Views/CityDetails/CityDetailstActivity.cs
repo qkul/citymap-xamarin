@@ -3,9 +3,12 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Support.V7.App;
+using Android.Views;
 using Android.Widget;
+using CityMapXamarin.Android.Views.CitiesMap;
 using FFImageLoading;
 using FFImageLoading.Views;
+using Newtonsoft.Json;
 
 namespace CityMapXamarin.Android.Views.CityDetails
 {
@@ -48,7 +51,7 @@ namespace CityMapXamarin.Android.Views.CityDetails
             OnBackPressed();
             return true;
         }
-
+    
         private void SetupUI()
         {
             var descriptionTextView = FindViewById<TextView>(Resource.Id.text_view_city_details);

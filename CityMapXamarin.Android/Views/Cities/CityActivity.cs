@@ -3,10 +3,13 @@ using Android.Content;
 using Android.OS;
 using Android.Support.V7.App;
 using Android.Support.V7.Widget;
+using Android.Views;
+using CityMapXamarin.Android.Views.CitiesMap;
 using CityMapXamarin.Android.Views.CityDetails;
 using CityMapXamarin.Infrastructure;
 using CityMapXamarin.Models;
 using CityMapXamarin.Services;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -32,10 +35,28 @@ namespace CityMapXamarin.Android.Views.Cities
             await LoadDataAsync();
         }
 
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Resource.Id.show_on_map:
+                {
+                    var mapActivityIntent = new Intent(this, typeof(CitiesMapActivity));
+                    mapActivityIntent.PutExtra(ConstView.ExtraCities, JsonConvert.SerializeObject(Cities));
+                    StartActivity(mapActivityIntent);
+                    break;
+                }
+            }
+            return true;
+        }
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.cities_map, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
         private void SetupRecyclerView()
         {
             var citiesLayoutManager = new GridLayoutManager(ApplicationContext, ConstView.GridLayoutCount);
-
             var citiesRecyclerView = FindViewById<RecyclerView>(Resource.Id.recycler_view_cities_list);
 
             citiesRecyclerView.SetLayoutManager(citiesLayoutManager);
