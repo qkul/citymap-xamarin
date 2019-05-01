@@ -20,14 +20,14 @@ namespace CityMapXamarin.Services
             {
                 return Barrel.Current.Get<IEnumerable<City>>(ApiUrl);
             }
-            if (!Barrel.Current.IsExpired(ApiUrl))
-            {
-                return Barrel.Current.Get<IEnumerable<City>>(ApiUrl);
-            }
+            //if (!Barrel.Current.IsExpired(ApiUrl))
+            //{
+            //    return Barrel.Current.Get<IEnumerable<City>>(ApiUrl);
+            //}
 
             var client = new HttpClient();
             var responseJson = await client.GetStringAsync(ApiUrl);
-            var cities = JsonConvert.DeserializeObject<ApiResponse> (responseJson);
+            var cities = JsonConvert.DeserializeObject<ApiResponse>(responseJson);
             //Saves the cache and pass it a timespan for expiration
             Barrel.Current.Add(key: ApiUrl, data: cities, expireIn: TimeSpan.FromDays(1));
 

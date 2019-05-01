@@ -56,7 +56,8 @@ namespace CityMapXamarin.Android.Views.Cities
         }
         private void SetupRecyclerView()
         {
-            var citiesLayoutManager = new GridLayoutManager(ApplicationContext, ConstView.GridLayoutCount);
+            var gridCount = Resources.GetInteger(Resource.Integer.grid_count);
+            var citiesLayoutManager = new GridLayoutManager(ApplicationContext, gridCount);
             var citiesRecyclerView = FindViewById<RecyclerView>(Resource.Id.recycler_view_cities_list);
 
             citiesRecyclerView.SetLayoutManager(citiesLayoutManager);

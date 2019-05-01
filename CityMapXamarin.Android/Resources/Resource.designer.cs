@@ -2771,6 +2771,9 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f060000
 			public const int google_play_services_version = 2131099648;
 			
+			// aapt resource value: 0x7f060006
+			public const int grid_count = 2131099654;
+			
 			// aapt resource value: 0x7f060005
 			public const int status_bar_notification_info_maxnum = 2131099653;
 			
