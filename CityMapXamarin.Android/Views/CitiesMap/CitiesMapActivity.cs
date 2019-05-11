@@ -1,23 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
+﻿using Android.App;
 using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using Android.OS;
-using Android.Runtime;
 using Android.Support.V4.App;
-using Android.Support.V7.App;
-using Android.Views;
-using Android.Widget;
 using CityMapXamarin.Models;
 using CityMapXamarin.ViewModels;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platforms.Android.Views;
-using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace CityMapXamarin.Android.Views.CitiesMap
 {
@@ -25,7 +15,7 @@ namespace CityMapXamarin.Android.Views.CitiesMap
     public class CitiesMapActivity : MvxActivity<CitiesMapViewModel>, IOnMapReadyCallback
     {
         private GoogleMap _googleMap;
-        private IEnumerable<City> NewCities { get; set; }
+        public IEnumerable<City> NewCities { get; set; }
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
