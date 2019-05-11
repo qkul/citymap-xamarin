@@ -4,17 +4,9 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-	<TextView
-        android:textSize="30sp"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtNumber"
-        local:MvxBind="Text Number" />
     <Button
-        android:text="Increment"
+        android:text="Map"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnIncrement"
-        local:MvxBind="Click IncrementCommand" />
+        android:id="@+id/button_map_id"/>
 </LinearLayout>

@@ -7,6 +7,7 @@ namespace CityMapXamarin.Models
 {
     public class City
     {
+        public int Id { get; set; }
         [JsonProperty]
         public string Title { get; set; }
         [JsonProperty]

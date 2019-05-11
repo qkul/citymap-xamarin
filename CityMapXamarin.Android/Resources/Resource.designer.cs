@@ -2335,8 +2335,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0037
 			public const int SYM = 2131361847;
 			
-			// aapt resource value: 0x7f0a008e
-			public const int action0 = 2131361934;
+			// aapt resource value: 0x7f0a008d
+			public const int action0 = 2131361933;
 			
 			// aapt resource value: 0x7f0a0074
 			public const int action_bar = 2131361908;
@@ -2359,17 +2359,17 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0052
 			public const int action_bar_title = 2131361874;
 			
-			// aapt resource value: 0x7f0a008b
-			public const int action_container = 2131361931;
+			// aapt resource value: 0x7f0a008a
+			public const int action_container = 2131361930;
 			
 			// aapt resource value: 0x7f0a0075
 			public const int action_context_bar = 2131361909;
 			
-			// aapt resource value: 0x7f0a0092
-			public const int action_divider = 2131361938;
+			// aapt resource value: 0x7f0a0091
+			public const int action_divider = 2131361937;
 			
-			// aapt resource value: 0x7f0a008c
-			public const int action_image = 2131361932;
+			// aapt resource value: 0x7f0a008b
+			public const int action_image = 2131361931;
 			
 			// aapt resource value: 0x7f0a0003
 			public const int action_menu_divider = 2131361795;
@@ -2386,11 +2386,11 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0054
 			public const int action_mode_close_button = 2131361876;
 			
-			// aapt resource value: 0x7f0a008d
-			public const int action_text = 2131361933;
+			// aapt resource value: 0x7f0a008c
+			public const int action_text = 2131361932;
 			
-			// aapt resource value: 0x7f0a009b
-			public const int actions = 2131361947;
+			// aapt resource value: 0x7f0a009a
+			public const int actions = 2131361946;
 			
 			// aapt resource value: 0x7f0a0055
 			public const int activity_chooser_view_content = 2131361877;
@@ -2428,14 +2428,14 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a003d
 			public const int bottom = 2131361853;
 			
-			// aapt resource value: 0x7f0a0089
-			public const int btnIncrement = 2131361929;
-			
 			// aapt resource value: 0x7f0a005b
 			public const int buttonPanel = 2131361883;
 			
-			// aapt resource value: 0x7f0a008f
-			public const int cancel_action = 2131361935;
+			// aapt resource value: 0x7f0a0088
+			public const int button_map_id = 2131361928;
+			
+			// aapt resource value: 0x7f0a008e
+			public const int cancel_action = 2131361934;
 			
 			// aapt resource value: 0x7f0a004b
 			public const int chains = 2131361867;
@@ -2443,8 +2443,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a006b
 			public const int checkbox = 2131361899;
 			
-			// aapt resource value: 0x7f0a0097
-			public const int chronometer = 2131361943;
+			// aapt resource value: 0x7f0a0096
+			public const int chronometer = 2131361942;
 			
 			// aapt resource value: 0x7f0a0039
 			public const int collapseActionView = 2131361849;
@@ -2482,8 +2482,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0030
 			public const int end = 2131361840;
 			
-			// aapt resource value: 0x7f0a009d
-			public const int end_padder = 2131361949;
+			// aapt resource value: 0x7f0a009c
+			public const int end_padder = 2131361948;
 			
 			// aapt resource value: 0x7f0a0056
 			public const int expand_activities_button = 2131361878;
@@ -2509,8 +2509,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a005a
 			public const int icon = 2131361882;
 			
-			// aapt resource value: 0x7f0a009c
-			public const int icon_group = 2131361948;
+			// aapt resource value: 0x7f0a009b
+			public const int icon_group = 2131361947;
 			
 			// aapt resource value: 0x7f0a0019
 			public const int icon_only = 2131361817;
@@ -2527,8 +2527,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0086
 			public const int image_city_item = 2131361926;
 			
-			// aapt resource value: 0x7f0a0098
-			public const int info = 2131361944;
+			// aapt resource value: 0x7f0a0097
+			public const int info = 2131361943;
 			
 			// aapt resource value: 0x7f0a0043
 			public const int invisible = 2131361859;
@@ -2557,14 +2557,14 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0059
 			public const int list_item = 2131361881;
 			
-			// aapt resource value: 0x7f0a008a
-			public const int map = 2131361930;
+			// aapt resource value: 0x7f0a0089
+			public const int map = 2131361929;
 			
-			// aapt resource value: 0x7f0a0091
-			public const int media_actions = 2131361937;
+			// aapt resource value: 0x7f0a0090
+			public const int media_actions = 2131361936;
 			
-			// aapt resource value: 0x7f0a009e
-			public const int message = 2131361950;
+			// aapt resource value: 0x7f0a009d
+			public const int message = 2131361949;
 			
 			// aapt resource value: 0x7f0a0031
 			public const int middle = 2131361841;
@@ -2581,14 +2581,14 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0014
 			public const int normal = 2131361812;
 			
-			// aapt resource value: 0x7f0a009a
-			public const int notification_background = 2131361946;
-			
-			// aapt resource value: 0x7f0a0094
-			public const int notification_main_column = 2131361940;
+			// aapt resource value: 0x7f0a0099
+			public const int notification_background = 2131361945;
 			
 			// aapt resource value: 0x7f0a0093
-			public const int notification_main_column_container = 2131361939;
+			public const int notification_main_column = 2131361939;
+			
+			// aapt resource value: 0x7f0a0092
+			public const int notification_main_column_container = 2131361938;
 			
 			// aapt resource value: 0x7f0a0048
 			public const int packed = 2131361864;
@@ -2617,11 +2617,11 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0040
 			public const int right = 2131361856;
 			
-			// aapt resource value: 0x7f0a0099
-			public const int right_icon = 2131361945;
+			// aapt resource value: 0x7f0a0098
+			public const int right_icon = 2131361944;
 			
-			// aapt resource value: 0x7f0a0095
-			public const int right_side = 2131361941;
+			// aapt resource value: 0x7f0a0094
+			public const int right_side = 2131361940;
 			
 			// aapt resource value: 0x7f0a0015
 			public const int satellite = 2131361813;
@@ -2683,8 +2683,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0025
 			public const int showTitle = 2131361829;
 			
-			// aapt resource value: 0x7f0a009f
-			public const int show_on_map = 2131361951;
+			// aapt resource value: 0x7f0a009e
+			public const int show_on_map = 2131361950;
 			
 			// aapt resource value: 0x7f0a005c
 			public const int spacer = 2131361884;
@@ -2713,8 +2713,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0041
 			public const int start = 2131361857;
 			
-			// aapt resource value: 0x7f0a0090
-			public const int status_bar_latest_event_content = 2131361936;
+			// aapt resource value: 0x7f0a008f
+			public const int status_bar_latest_event_content = 2131361935;
 			
 			// aapt resource value: 0x7f0a006e
 			public const int submenuarrow = 2131361902;
@@ -2749,8 +2749,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0087
 			public const int text_view_city_title = 2131361927;
 			
-			// aapt resource value: 0x7f0a0096
-			public const int time = 2131361942;
+			// aapt resource value: 0x7f0a0095
+			public const int time = 2131361941;
 			
 			// aapt resource value: 0x7f0a000f
 			public const int title = 2131361807;
@@ -2766,9 +2766,6 @@ namespace CityMapXamarin.Android
 			
 			// aapt resource value: 0x7f0a0066
 			public const int topPanel = 2131361894;
-			
-			// aapt resource value: 0x7f0a0088
-			public const int txtNumber = 2131361928;
 			
 			// aapt resource value: 0x7f0a002d
 			public const int uniform = 2131361837;

@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using CityMapXamarin.Infrastructure;
+using CityMapXamarin.Models;
 using MvvmCross.Commands;
 using MvvmCross.ViewModels;
 
@@ -10,27 +13,41 @@ namespace CityMapXamarin.ViewModels
 {
     public class MainPageViewModel : MvxViewModel
     {
-        public override async Task Initialize()
+        private readonly INavigationManager _navigationManager;
+        private readonly ICityService _cityService;
+
+        private IEnumerable<City> _cities;
+
+
+        public  IMvxCommand NavigateToMapAsyncCommand  => new MvxAsyncCommand(DoNavigateToMapAsync);
+
+      
+
+        public MainPageViewModel(INavigationManager navigationManager, ICityService cityService)
         {
-            await base.Initialize();
+            _navigationManager = navigationManager;
+            _cityService = cityService;
         }
 
-        public ICommand IncrementCommand => new MvxCommand(DoIncrement);
-
-        private void DoIncrement()
+        public IEnumerable<City> Cities
         {
-            Number++;
-        }
-
-        private int _number;
-        public int Number
-        {
-            get => _number;
+            get => _cities;
             set
             {
-                _number = value;
-                RaisePropertyChanged(() => Number);
+                _cities = value;
+                RaisePropertyChanged(() => Cities);
             }
+        }
+
+        public override async void ViewCreated()
+        {
+            base.ViewCreated();
+            Cities = await _cityService.LoadCitiesAsync();
+        }
+
+        private async Task DoNavigateToMapAsync()
+        {
+            await _navigationManager.NavigateToMapAsync(_cities);
         }
     }
 }

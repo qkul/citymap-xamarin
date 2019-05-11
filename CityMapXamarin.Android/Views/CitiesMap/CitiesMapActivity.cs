@@ -14,35 +14,40 @@ using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
 using CityMapXamarin.Models;
+using CityMapXamarin.ViewModels;
+using MvvmCross.Binding.BindingContext;
+using MvvmCross.Platforms.Android.Views;
 using Newtonsoft.Json;
 
 namespace CityMapXamarin.Android.Views.CitiesMap
 {
     [Activity(Label = "CitiesMapActivity")]
-    public class CitiesMapActivity : FragmentActivity, IOnMapReadyCallback
+    public class CitiesMapActivity : MvxActivity<CitiesMapViewModel>, IOnMapReadyCallback
     {
-        private IEnumerable<City> Cities { get; set; }
+        private GoogleMap _googleMap;
+        private IEnumerable<City> NewCities { get; set; }
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            SetContentView(Resource.Layout.activity_map);
-
-            LoadNavigationParameters();
-
+            AppBindings();
+            SetContentView(Resource.Layout.activity_map);           
             SetupMap();
         }
 
-        private void LoadNavigationParameters()
+  
+        private void AppBindings()
         {
-            var citiesSerialized = Intent.GetStringExtra(ConstView.ExtraCities);
-            Cities = JsonConvert.DeserializeObject<IEnumerable<City>>(citiesSerialized);
+            var set = this.CreateBindingSet<CitiesMapActivity, CitiesMapViewModel>();
+            set.Bind(this).For(c=>c.NewCities).To(vm => vm.Cities);
+            set.Apply();
         }
 
         public void OnMapReady(GoogleMap googleMap)
         {
-            foreach (var city in Cities)
+            _googleMap = googleMap;
+
+            foreach (var city in NewCities)
             {
                 var cityCoordinates = new LatLng(city.Latitude, city.Longitude);
 
@@ -53,8 +58,12 @@ namespace CityMapXamarin.Android.Views.CitiesMap
         }
         private void SetupMap()
         {
-            var mapFragment = (SupportMapFragment)SupportFragmentManager.FindFragmentById(Resource.Id.map);
-            mapFragment.GetMapAsync(this);
+            //var mapFragment = (SupportMapFragment)SupportFragmentManager.FindFragmentById(Resource.Id.map);
+            //mapFragment.GetMapAsync(this);
+            if (_googleMap == null)
+            {
+                FragmentManager.FindFragmentById<MapFragment>(Resource.Id.map).GetMapAsync(this);
+            }
         }
     }
 }
