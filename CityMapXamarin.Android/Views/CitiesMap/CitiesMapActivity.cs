@@ -1,13 +1,23 @@
-﻿using Android.App;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using Android.App;
+using Android.Content;
 using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using Android.OS;
+using Android.Runtime;
 using Android.Support.V4.App;
+using Android.Support.V7.App;
+using Android.Views;
+using Android.Widget;
 using CityMapXamarin.Models;
 using CityMapXamarin.ViewModels;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platforms.Android.Views;
-using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace CityMapXamarin.Android.Views.CitiesMap
 {
