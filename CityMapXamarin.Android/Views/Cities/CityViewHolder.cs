@@ -3,26 +3,55 @@ using Android.Views;
 using Android.Widget;
 using FFImageLoading.Views;
 using System;
+using CityMapXamarin.Android.Resources;
+using CityMapXamarin.Models;
+using MvvmCross.Binding.BindingContext;
+using MvvmCross.Droid.Support.V7.RecyclerView;
+using MvvmCross.Platforms.Android.Binding.BindingContext;
 
 namespace CityMapXamarin.Android.Views.Cities
 {
-    internal class CityViewHolder : RecyclerView.ViewHolder
+    internal class CityViewHolder : MvxRecyclerViewHolder
     {
-        public TextView TitleTextView { get; }
-        public ImageViewAsync PhotoImageView { get; set; }
+        private TextView _titleTextView { get; set; }
+        private ImageViewAsync _photoImageView { get; set; }
+        private LinearLayout _linearLayout { get; set; } 
+        public event EventHandler CityClicked;
 
-        public CityViewHolder(View itemView, Action<int> listener) : base(itemView)
+        public CityViewHolder(View itemView, IMvxAndroidBindingContext context) : base(itemView, context)
         {
-            TitleTextView = itemView.FindViewById<TextView>(Resource.Id.text_view_city_title);
-            PhotoImageView = itemView.FindViewById<ImageViewAsync>(Resource.Id.image_city_item);
+           InitComponents(itemView);
+           AppBindings();
+        }
+        private void AppBindings()
+        {
+            var bindingSet = this.CreateBindingSet<CityViewHolder, City>();
+            bindingSet.Bind(_titleTextView)
+                .For(p => p.Text)
+                .To(vm => vm.Title);
+            bindingSet.Bind(_photoImageView)
+                .For(p => p.Drawable)
+                .To(m => m.Url).WithConversion<ImagePathToDrawableConverter>();
 
-            itemView.Click += (sender, e) => listener(LayoutPosition);
+            bindingSet.Apply();
+        }
+
+        private void InitComponents(View itemView)
+        {
+            _titleTextView = itemView.FindViewById<TextView>(Resource.Id.text_view_city_title);
+            _photoImageView = itemView.FindViewById<ImageViewAsync>(Resource.Id.image_city_item);
+            _linearLayout = itemView.FindViewById<LinearLayout>(Resource.Id.cityItemCell);
+
+            _linearLayout.Click += (s, e) =>
+            {
+                CityClicked(DataContext as City, null);
+            };       
         }
         protected override void Dispose(bool disposing)
         {
             if (disposing)
             {
-                PhotoImageView?.Dispose();
+                _photoImageView?.Dispose();
             }
 
             base.Dispose(disposing);

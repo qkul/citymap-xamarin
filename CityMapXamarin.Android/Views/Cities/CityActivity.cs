@@ -30,9 +30,9 @@ namespace CityMapXamarin.Android.Views.Cities
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_cities);
             _progressDialog = CreateProgressDialog();
-            SetupAdapter();
+            //SetupAdapter();
             SetupRecyclerView();
-            await LoadDataAsync();
+            //await LoadDataAsync();
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
@@ -64,27 +64,27 @@ namespace CityMapXamarin.Android.Views.Cities
             citiesRecyclerView.SetAdapter(_cityAdapter);
         }
 
-        private void SetupAdapter()
-        {
-            _cityAdapter = new CityAdapter();
-            _cityAdapter.ItemClicked += CityAdapterOnItemClicked;
-        }
+        //private void SetupAdapter()
+        //{
+        //    _cityAdapter = new CityAdapter();
+        //    _cityAdapter.ItemClicked += CityAdapterOnItemClicked;
+        //}
 
-        private async Task LoadDataAsync()
-        {
-            _progressDialog.Show();
+        //private async Task LoadDataAsync()
+        //{
+        //    _progressDialog.Show();
 
-            try
-            {
-                Cities = await _cityService.LoadCitiesAsync();
-                _cityAdapter.Update(Cities);
-            }
+        //    try
+        //    {
+        //        Cities = await _cityService.LoadCitiesAsync();
+        //        _cityAdapter.Update(Cities);
+        //    }
 
-            finally
-            {
-                _progressDialog.Hide();
-            }
-        }
+        //    finally
+        //    {
+        //        _progressDialog.Hide();
+        //    }
+        //}
 
         private void CityAdapterOnItemClicked(object sender, int position)
         {

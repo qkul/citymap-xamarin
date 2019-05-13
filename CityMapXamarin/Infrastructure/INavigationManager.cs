@@ -9,7 +9,7 @@ namespace CityMapXamarin.Infrastructure
 {
     public interface INavigationManager
     {
-      //  Task NavigateToCityAsync(CityModel city);
+        Task NavigateToCityAsync(City city);
         Task NavigateToMapAsync(IEnumerable<City> cities);
     }
 }

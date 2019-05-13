@@ -44,6 +44,156 @@ namespace CityMapXamarin.Android
 			global::MvvmCross.Resource.Styleable.MvxListView = global::CityMapXamarin.Android.Resource.Styleable.MvxListView;
 			global::MvvmCross.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::CityMapXamarin.Android.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Resource.Styleable.MvxListView_MvxItemTemplate = global::CityMapXamarin.Android.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.MvxBind = global::CityMapXamarin.Android.Resource.Attribute.MvxBind;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.MvxDropDownItemTemplate = global::CityMapXamarin.Android.Resource.Attribute.MvxDropDownItemTemplate;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.MvxGroupItemTemplate = global::CityMapXamarin.Android.Resource.Attribute.MvxGroupItemTemplate;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.MvxItemTemplate = global::CityMapXamarin.Android.Resource.Attribute.MvxItemTemplate;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.MvxLang = global::CityMapXamarin.Android.Resource.Attribute.MvxLang;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.MvxTemplate = global::CityMapXamarin.Android.Resource.Attribute.MvxTemplate;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.MvxTemplateSelector = global::CityMapXamarin.Android.Resource.Attribute.MvxTemplateSelector;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.fastScrollEnabled = global::CityMapXamarin.Android.Resource.Attribute.fastScrollEnabled;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::CityMapXamarin.Android.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::CityMapXamarin.Android.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.fastScrollVerticalThumbDrawable = global::CityMapXamarin.Android.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.fastScrollVerticalTrackDrawable = global::CityMapXamarin.Android.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.font = global::CityMapXamarin.Android.Resource.Attribute.font;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.fontProviderAuthority = global::CityMapXamarin.Android.Resource.Attribute.fontProviderAuthority;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.fontProviderCerts = global::CityMapXamarin.Android.Resource.Attribute.fontProviderCerts;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.fontProviderFetchStrategy = global::CityMapXamarin.Android.Resource.Attribute.fontProviderFetchStrategy;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.fontProviderFetchTimeout = global::CityMapXamarin.Android.Resource.Attribute.fontProviderFetchTimeout;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.fontProviderPackage = global::CityMapXamarin.Android.Resource.Attribute.fontProviderPackage;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.fontProviderQuery = global::CityMapXamarin.Android.Resource.Attribute.fontProviderQuery;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.fontStyle = global::CityMapXamarin.Android.Resource.Attribute.fontStyle;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.fontWeight = global::CityMapXamarin.Android.Resource.Attribute.fontWeight;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.layoutManager = global::CityMapXamarin.Android.Resource.Attribute.layoutManager;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.reverseLayout = global::CityMapXamarin.Android.Resource.Attribute.reverseLayout;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.spanCount = global::CityMapXamarin.Android.Resource.Attribute.spanCount;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Attribute.stackFromEnd = global::CityMapXamarin.Android.Resource.Attribute.stackFromEnd;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Boolean.abc_action_bar_embed_tabs = global::CityMapXamarin.Android.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Color.notification_action_color_filter = global::CityMapXamarin.Android.Resource.Color.notification_action_color_filter;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Color.notification_icon_bg_color = global::CityMapXamarin.Android.Resource.Color.notification_icon_bg_color;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Color.ripple_material_light = global::CityMapXamarin.Android.Resource.Color.ripple_material_light;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Color.secondary_text_default_material_light = global::CityMapXamarin.Android.Resource.Color.secondary_text_default_material_light;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.compat_button_inset_horizontal_material = global::CityMapXamarin.Android.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.compat_button_inset_vertical_material = global::CityMapXamarin.Android.Resource.Dimension.compat_button_inset_vertical_material;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.compat_button_padding_horizontal_material = global::CityMapXamarin.Android.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.compat_button_padding_vertical_material = global::CityMapXamarin.Android.Resource.Dimension.compat_button_padding_vertical_material;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.compat_control_corner_material = global::CityMapXamarin.Android.Resource.Dimension.compat_control_corner_material;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.fastscroll_default_thickness = global::CityMapXamarin.Android.Resource.Dimension.fastscroll_default_thickness;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.fastscroll_margin = global::CityMapXamarin.Android.Resource.Dimension.fastscroll_margin;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.fastscroll_minimum_range = global::CityMapXamarin.Android.Resource.Dimension.fastscroll_minimum_range;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::CityMapXamarin.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::CityMapXamarin.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::CityMapXamarin.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.notification_action_icon_size = global::CityMapXamarin.Android.Resource.Dimension.notification_action_icon_size;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.notification_action_text_size = global::CityMapXamarin.Android.Resource.Dimension.notification_action_text_size;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.notification_big_circle_margin = global::CityMapXamarin.Android.Resource.Dimension.notification_big_circle_margin;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.notification_content_margin_start = global::CityMapXamarin.Android.Resource.Dimension.notification_content_margin_start;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.notification_large_icon_height = global::CityMapXamarin.Android.Resource.Dimension.notification_large_icon_height;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.notification_large_icon_width = global::CityMapXamarin.Android.Resource.Dimension.notification_large_icon_width;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.notification_main_column_padding_top = global::CityMapXamarin.Android.Resource.Dimension.notification_main_column_padding_top;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.notification_media_narrow_margin = global::CityMapXamarin.Android.Resource.Dimension.notification_media_narrow_margin;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.notification_right_icon_size = global::CityMapXamarin.Android.Resource.Dimension.notification_right_icon_size;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.notification_right_side_padding_top = global::CityMapXamarin.Android.Resource.Dimension.notification_right_side_padding_top;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.notification_small_icon_background_padding = global::CityMapXamarin.Android.Resource.Dimension.notification_small_icon_background_padding;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.notification_small_icon_size_as_large = global::CityMapXamarin.Android.Resource.Dimension.notification_small_icon_size_as_large;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.notification_subtext_size = global::CityMapXamarin.Android.Resource.Dimension.notification_subtext_size;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.notification_top_pad = global::CityMapXamarin.Android.Resource.Dimension.notification_top_pad;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Dimension.notification_top_pad_large_text = global::CityMapXamarin.Android.Resource.Dimension.notification_top_pad_large_text;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Drawable.notification_action_background = global::CityMapXamarin.Android.Resource.Drawable.notification_action_background;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Drawable.notification_bg = global::CityMapXamarin.Android.Resource.Drawable.notification_bg;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Drawable.notification_bg_low = global::CityMapXamarin.Android.Resource.Drawable.notification_bg_low;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Drawable.notification_bg_low_normal = global::CityMapXamarin.Android.Resource.Drawable.notification_bg_low_normal;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Drawable.notification_bg_low_pressed = global::CityMapXamarin.Android.Resource.Drawable.notification_bg_low_pressed;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Drawable.notification_bg_normal = global::CityMapXamarin.Android.Resource.Drawable.notification_bg_normal;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Drawable.notification_bg_normal_pressed = global::CityMapXamarin.Android.Resource.Drawable.notification_bg_normal_pressed;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Drawable.notification_icon_background = global::CityMapXamarin.Android.Resource.Drawable.notification_icon_background;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Drawable.notification_template_icon_bg = global::CityMapXamarin.Android.Resource.Drawable.notification_template_icon_bg;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Drawable.notification_template_icon_low_bg = global::CityMapXamarin.Android.Resource.Drawable.notification_template_icon_low_bg;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Drawable.notification_tile_bg = global::CityMapXamarin.Android.Resource.Drawable.notification_tile_bg;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Drawable.notify_panel_notification_icon_bg = global::CityMapXamarin.Android.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.MvvmCrossTagId = global::CityMapXamarin.Android.Resource.Id.MvvmCrossTagId;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.MvxBindingTagUnique = global::CityMapXamarin.Android.Resource.Id.MvxBindingTagUnique;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.action_container = global::CityMapXamarin.Android.Resource.Id.action_container;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.action_divider = global::CityMapXamarin.Android.Resource.Id.action_divider;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.action_image = global::CityMapXamarin.Android.Resource.Id.action_image;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.action_text = global::CityMapXamarin.Android.Resource.Id.action_text;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.actions = global::CityMapXamarin.Android.Resource.Id.actions;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.async = global::CityMapXamarin.Android.Resource.Id.async;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.blocking = global::CityMapXamarin.Android.Resource.Id.blocking;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.chronometer = global::CityMapXamarin.Android.Resource.Id.chronometer;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.forever = global::CityMapXamarin.Android.Resource.Id.forever;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.icon = global::CityMapXamarin.Android.Resource.Id.icon;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.icon_group = global::CityMapXamarin.Android.Resource.Id.icon_group;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.info = global::CityMapXamarin.Android.Resource.Id.info;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.italic = global::CityMapXamarin.Android.Resource.Id.italic;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.item_touch_helper_previous_elevation = global::CityMapXamarin.Android.Resource.Id.item_touch_helper_previous_elevation;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.line1 = global::CityMapXamarin.Android.Resource.Id.line1;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.line3 = global::CityMapXamarin.Android.Resource.Id.line3;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.normal = global::CityMapXamarin.Android.Resource.Id.normal;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.notification_background = global::CityMapXamarin.Android.Resource.Id.notification_background;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.notification_main_column = global::CityMapXamarin.Android.Resource.Id.notification_main_column;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.notification_main_column_container = global::CityMapXamarin.Android.Resource.Id.notification_main_column_container;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.right_icon = global::CityMapXamarin.Android.Resource.Id.right_icon;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.right_side = global::CityMapXamarin.Android.Resource.Id.right_side;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.tag_transition_group = global::CityMapXamarin.Android.Resource.Id.tag_transition_group;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.text = global::CityMapXamarin.Android.Resource.Id.text;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.text2 = global::CityMapXamarin.Android.Resource.Id.text2;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.time = global::CityMapXamarin.Android.Resource.Id.time;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Id.title = global::CityMapXamarin.Android.Resource.Id.title;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Integer.status_bar_notification_info_maxnum = global::CityMapXamarin.Android.Resource.Integer.status_bar_notification_info_maxnum;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Layout.notification_action = global::CityMapXamarin.Android.Resource.Layout.notification_action;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Layout.notification_action_tombstone = global::CityMapXamarin.Android.Resource.Layout.notification_action_tombstone;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Layout.notification_template_custom_big = global::CityMapXamarin.Android.Resource.Layout.notification_template_custom_big;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Layout.notification_template_icon_group = global::CityMapXamarin.Android.Resource.Layout.notification_template_icon_group;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Layout.notification_template_part_chronometer = global::CityMapXamarin.Android.Resource.Layout.notification_template_part_chronometer;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Layout.notification_template_part_time = global::CityMapXamarin.Android.Resource.Layout.notification_template_part_time;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.String.status_bar_notification_info_overflow = global::CityMapXamarin.Android.Resource.String.status_bar_notification_info_overflow;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Style.TextAppearance_Compat_Notification = global::CityMapXamarin.Android.Resource.Style.TextAppearance_Compat_Notification;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Style.TextAppearance_Compat_Notification_Info = global::CityMapXamarin.Android.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::CityMapXamarin.Android.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Style.TextAppearance_Compat_Notification_Time = global::CityMapXamarin.Android.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Style.TextAppearance_Compat_Notification_Title = global::CityMapXamarin.Android.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Style.Widget_Compat_NotificationActionContainer = global::CityMapXamarin.Android.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Style.Widget_Compat_NotificationActionText = global::CityMapXamarin.Android.Resource.Style.Widget_Compat_NotificationActionText;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.FontFamily = global::CityMapXamarin.Android.Resource.Styleable.FontFamily;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.FontFamily_fontProviderAuthority = global::CityMapXamarin.Android.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.FontFamily_fontProviderCerts = global::CityMapXamarin.Android.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::CityMapXamarin.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::CityMapXamarin.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.FontFamily_fontProviderPackage = global::CityMapXamarin.Android.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.FontFamily_fontProviderQuery = global::CityMapXamarin.Android.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.FontFamilyFont = global::CityMapXamarin.Android.Resource.Styleable.FontFamilyFont;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.FontFamilyFont_android_font = global::CityMapXamarin.Android.Resource.Styleable.FontFamilyFont_android_font;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.FontFamilyFont_android_fontStyle = global::CityMapXamarin.Android.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.FontFamilyFont_android_fontWeight = global::CityMapXamarin.Android.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.FontFamilyFont_font = global::CityMapXamarin.Android.Resource.Styleable.FontFamilyFont_font;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.FontFamilyFont_fontStyle = global::CityMapXamarin.Android.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.FontFamilyFont_fontWeight = global::CityMapXamarin.Android.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.MvxBinding = global::CityMapXamarin.Android.Resource.Styleable.MvxBinding;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.MvxBinding_MvxBind = global::CityMapXamarin.Android.Resource.Styleable.MvxBinding_MvxBind;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.MvxBinding_MvxLang = global::CityMapXamarin.Android.Resource.Styleable.MvxBinding_MvxLang;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.MvxControl = global::CityMapXamarin.Android.Resource.Styleable.MvxControl;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.MvxControl_MvxTemplate = global::CityMapXamarin.Android.Resource.Styleable.MvxControl_MvxTemplate;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.MvxExpandableListView = global::CityMapXamarin.Android.Resource.Styleable.MvxExpandableListView;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::CityMapXamarin.Android.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.MvxListView = global::CityMapXamarin.Android.Resource.Styleable.MvxListView;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::CityMapXamarin.Android.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.MvxListView_MvxItemTemplate = global::CityMapXamarin.Android.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.MvxRecyclerView = global::CityMapXamarin.Android.Resource.Styleable.MvxRecyclerView;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.MvxRecyclerView_MvxTemplateSelector = global::CityMapXamarin.Android.Resource.Styleable.MvxRecyclerView_MvxTemplateSelector;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView = global::CityMapXamarin.Android.Resource.Styleable.RecyclerView;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_android_descendantFocusability = global::CityMapXamarin.Android.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_android_orientation = global::CityMapXamarin.Android.Resource.Styleable.RecyclerView_android_orientation;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_fastScrollEnabled = global::CityMapXamarin.Android.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::CityMapXamarin.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::CityMapXamarin.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::CityMapXamarin.Android.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::CityMapXamarin.Android.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_layoutManager = global::CityMapXamarin.Android.Resource.Styleable.RecyclerView_layoutManager;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_reverseLayout = global::CityMapXamarin.Android.Resource.Styleable.RecyclerView_reverseLayout;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_spanCount = global::CityMapXamarin.Android.Resource.Styleable.RecyclerView_spanCount;
+			global::MvvmCross.Droid.Support.V7.RecyclerView.Resource.Styleable.RecyclerView_stackFromEnd = global::CityMapXamarin.Android.Resource.Styleable.RecyclerView_stackFromEnd;
 		}
 		
 		public partial class Animation
@@ -98,23 +248,26 @@ namespace CityMapXamarin.Android
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010169
-			public const int MvxBind = 2130772329;
-			
-			// aapt resource value: 0x7f01016d
-			public const int MvxDropDownItemTemplate = 2130772333;
+			// aapt resource value: 0x7f01016a
+			public const int MvxBind = 2130772330;
 			
 			// aapt resource value: 0x7f01016e
-			public const int MvxGroupItemTemplate = 2130772334;
+			public const int MvxDropDownItemTemplate = 2130772334;
 			
-			// aapt resource value: 0x7f01016c
-			public const int MvxItemTemplate = 2130772332;
+			// aapt resource value: 0x7f01016f
+			public const int MvxGroupItemTemplate = 2130772335;
 			
-			// aapt resource value: 0x7f01016a
-			public const int MvxLang = 2130772330;
+			// aapt resource value: 0x7f01016d
+			public const int MvxItemTemplate = 2130772333;
 			
 			// aapt resource value: 0x7f01016b
-			public const int MvxTemplate = 2130772331;
+			public const int MvxLang = 2130772331;
+			
+			// aapt resource value: 0x7f01016c
+			public const int MvxTemplate = 2130772332;
+			
+			// aapt resource value: 0x7f010169
+			public const int MvxTemplateSelector = 2130772329;
 			
 			// aapt resource value: 0x7f01007a
 			public const int actionBarDivider = 2130772090;
@@ -2338,8 +2491,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0037
 			public const int SYM = 2131361847;
 			
-			// aapt resource value: 0x7f0a008d
-			public const int action0 = 2131361933;
+			// aapt resource value: 0x7f0a008e
+			public const int action0 = 2131361934;
 			
 			// aapt resource value: 0x7f0a0074
 			public const int action_bar = 2131361908;
@@ -2362,17 +2515,17 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0052
 			public const int action_bar_title = 2131361874;
 			
-			// aapt resource value: 0x7f0a008a
-			public const int action_container = 2131361930;
+			// aapt resource value: 0x7f0a008b
+			public const int action_container = 2131361931;
 			
 			// aapt resource value: 0x7f0a0075
 			public const int action_context_bar = 2131361909;
 			
-			// aapt resource value: 0x7f0a0091
-			public const int action_divider = 2131361937;
+			// aapt resource value: 0x7f0a0092
+			public const int action_divider = 2131361938;
 			
-			// aapt resource value: 0x7f0a008b
-			public const int action_image = 2131361931;
+			// aapt resource value: 0x7f0a008c
+			public const int action_image = 2131361932;
 			
 			// aapt resource value: 0x7f0a0003
 			public const int action_menu_divider = 2131361795;
@@ -2389,11 +2542,11 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0054
 			public const int action_mode_close_button = 2131361876;
 			
-			// aapt resource value: 0x7f0a008c
-			public const int action_text = 2131361932;
+			// aapt resource value: 0x7f0a008d
+			public const int action_text = 2131361933;
 			
-			// aapt resource value: 0x7f0a009a
-			public const int actions = 2131361946;
+			// aapt resource value: 0x7f0a009b
+			public const int actions = 2131361947;
 			
 			// aapt resource value: 0x7f0a0055
 			public const int activity_chooser_view_content = 2131361877;
@@ -2434,11 +2587,11 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a005b
 			public const int buttonPanel = 2131361883;
 			
-			// aapt resource value: 0x7f0a0088
-			public const int button_map_id = 2131361928;
+			// aapt resource value: 0x7f0a0084
+			public const int button_map_id = 2131361924;
 			
-			// aapt resource value: 0x7f0a008e
-			public const int cancel_action = 2131361934;
+			// aapt resource value: 0x7f0a008f
+			public const int cancel_action = 2131361935;
 			
 			// aapt resource value: 0x7f0a004b
 			public const int chains = 2131361867;
@@ -2446,8 +2599,11 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a006b
 			public const int checkbox = 2131361899;
 			
-			// aapt resource value: 0x7f0a0096
-			public const int chronometer = 2131361942;
+			// aapt resource value: 0x7f0a0097
+			public const int chronometer = 2131361943;
+			
+			// aapt resource value: 0x7f0a0083
+			public const int cityItemCell = 2131361923;
 			
 			// aapt resource value: 0x7f0a0039
 			public const int collapseActionView = 2131361849;
@@ -2485,8 +2641,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0030
 			public const int end = 2131361840;
 			
-			// aapt resource value: 0x7f0a009c
-			public const int end_padder = 2131361948;
+			// aapt resource value: 0x7f0a009d
+			public const int end_padder = 2131361949;
 			
 			// aapt resource value: 0x7f0a0056
 			public const int expand_activities_button = 2131361878;
@@ -2512,8 +2668,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a005a
 			public const int icon = 2131361882;
 			
-			// aapt resource value: 0x7f0a009b
-			public const int icon_group = 2131361947;
+			// aapt resource value: 0x7f0a009c
+			public const int icon_group = 2131361948;
 			
 			// aapt resource value: 0x7f0a0019
 			public const int icon_only = 2131361817;
@@ -2524,14 +2680,14 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0057
 			public const int image = 2131361879;
 			
-			// aapt resource value: 0x7f0a0084
-			public const int image_city_details = 2131361924;
-			
 			// aapt resource value: 0x7f0a0086
-			public const int image_city_item = 2131361926;
+			public const int image_city_details = 2131361926;
 			
-			// aapt resource value: 0x7f0a0097
-			public const int info = 2131361943;
+			// aapt resource value: 0x7f0a0088
+			public const int image_city_item = 2131361928;
+			
+			// aapt resource value: 0x7f0a0098
+			public const int info = 2131361944;
 			
 			// aapt resource value: 0x7f0a0043
 			public const int invisible = 2131361859;
@@ -2560,14 +2716,14 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0059
 			public const int list_item = 2131361881;
 			
-			// aapt resource value: 0x7f0a0089
-			public const int map = 2131361929;
+			// aapt resource value: 0x7f0a008a
+			public const int map = 2131361930;
 			
-			// aapt resource value: 0x7f0a0090
-			public const int media_actions = 2131361936;
+			// aapt resource value: 0x7f0a0091
+			public const int media_actions = 2131361937;
 			
-			// aapt resource value: 0x7f0a009d
-			public const int message = 2131361949;
+			// aapt resource value: 0x7f0a009e
+			public const int message = 2131361950;
 			
 			// aapt resource value: 0x7f0a0031
 			public const int middle = 2131361841;
@@ -2584,14 +2740,14 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0014
 			public const int normal = 2131361812;
 			
-			// aapt resource value: 0x7f0a0099
-			public const int notification_background = 2131361945;
+			// aapt resource value: 0x7f0a009a
+			public const int notification_background = 2131361946;
+			
+			// aapt resource value: 0x7f0a0094
+			public const int notification_main_column = 2131361940;
 			
 			// aapt resource value: 0x7f0a0093
-			public const int notification_main_column = 2131361939;
-			
-			// aapt resource value: 0x7f0a0092
-			public const int notification_main_column_container = 2131361938;
+			public const int notification_main_column_container = 2131361939;
 			
 			// aapt resource value: 0x7f0a0048
 			public const int packed = 2131361864;
@@ -2614,17 +2770,17 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a006d
 			public const int radio = 2131361901;
 			
-			// aapt resource value: 0x7f0a0083
-			public const int recycler_view_cities_list = 2131361923;
+			// aapt resource value: 0x7f0a0085
+			public const int recycler_view_cities_list = 2131361925;
 			
 			// aapt resource value: 0x7f0a0040
 			public const int right = 2131361856;
 			
-			// aapt resource value: 0x7f0a0098
-			public const int right_icon = 2131361944;
+			// aapt resource value: 0x7f0a0099
+			public const int right_icon = 2131361945;
 			
-			// aapt resource value: 0x7f0a0094
-			public const int right_side = 2131361940;
+			// aapt resource value: 0x7f0a0095
+			public const int right_side = 2131361941;
 			
 			// aapt resource value: 0x7f0a0015
 			public const int satellite = 2131361813;
@@ -2686,8 +2842,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0025
 			public const int showTitle = 2131361829;
 			
-			// aapt resource value: 0x7f0a009e
-			public const int show_on_map = 2131361950;
+			// aapt resource value: 0x7f0a009f
+			public const int show_on_map = 2131361951;
 			
 			// aapt resource value: 0x7f0a005c
 			public const int spacer = 2131361884;
@@ -2716,8 +2872,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0041
 			public const int start = 2131361857;
 			
-			// aapt resource value: 0x7f0a008f
-			public const int status_bar_latest_event_content = 2131361935;
+			// aapt resource value: 0x7f0a0090
+			public const int status_bar_latest_event_content = 2131361936;
 			
 			// aapt resource value: 0x7f0a006e
 			public const int submenuarrow = 2131361902;
@@ -2746,14 +2902,14 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0061
 			public const int textSpacerNoTitle = 2131361889;
 			
-			// aapt resource value: 0x7f0a0085
-			public const int text_view_city_details = 2131361925;
-			
 			// aapt resource value: 0x7f0a0087
-			public const int text_view_city_title = 2131361927;
+			public const int text_view_city_details = 2131361927;
 			
-			// aapt resource value: 0x7f0a0095
-			public const int time = 2131361941;
+			// aapt resource value: 0x7f0a0089
+			public const int text_view_city_title = 2131361929;
+			
+			// aapt resource value: 0x7f0a0096
+			public const int time = 2131361942;
 			
 			// aapt resource value: 0x7f0a000f
 			public const int title = 2131361807;
@@ -2935,64 +3091,67 @@ namespace CityMapXamarin.Android
 			public const int activity_splash_screen = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int notification_action = 2130968608;
+			public const int list_item_template = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int notification_action_tombstone = 2130968609;
+			public const int notification_action = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int notification_media_action = 2130968610;
+			public const int notification_action_tombstone = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int notification_media_cancel_action = 2130968611;
+			public const int notification_media_action = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int notification_template_big_media = 2130968612;
+			public const int notification_media_cancel_action = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int notification_template_big_media_custom = 2130968613;
+			public const int notification_template_big_media = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int notification_template_big_media_narrow = 2130968614;
+			public const int notification_template_big_media_custom = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int notification_template_big_media_narrow_custom = 2130968615;
+			public const int notification_template_big_media_narrow = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int notification_template_custom_big = 2130968616;
+			public const int notification_template_big_media_narrow_custom = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int notification_template_icon_group = 2130968617;
+			public const int notification_template_custom_big = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int notification_template_lines_media = 2130968618;
+			public const int notification_template_icon_group = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int notification_template_media = 2130968619;
+			public const int notification_template_lines_media = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int notification_template_media_custom = 2130968620;
+			public const int notification_template_media = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int notification_template_part_chronometer = 2130968621;
+			public const int notification_template_media_custom = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int notification_template_part_time = 2130968622;
+			public const int notification_template_part_chronometer = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int select_dialog_item_material = 2130968623;
+			public const int notification_template_part_time = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int select_dialog_multichoice_material = 2130968624;
+			public const int select_dialog_item_material = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int select_dialog_singlechoice_material = 2130968625;
+			public const int select_dialog_multichoice_material = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int support_simple_spinner_dropdown_item = 2130968626;
+			public const int select_dialog_singlechoice_material = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int tooltip = 2130968627;
+			public const int support_simple_spinner_dropdown_item = 2130968627;
+			
+			// aapt resource value: 0x7f040034
+			public const int tooltip = 2130968628;
 			
 			static Layout()
 			{
@@ -6135,8 +6294,8 @@ namespace CityMapXamarin.Android
 			public const int MenuView_subMenuArrow = 8;
 			
 			public static int[] MvxBinding = new int[] {
-					2130772329,
-					2130772330};
+					2130772330,
+					2130772331};
 			
 			// aapt resource value: 0
 			public const int MvxBinding_MvxBind = 0;
@@ -6145,26 +6304,32 @@ namespace CityMapXamarin.Android
 			public const int MvxBinding_MvxLang = 1;
 			
 			public static int[] MvxControl = new int[] {
-					2130772331};
+					2130772332};
 			
 			// aapt resource value: 0
 			public const int MvxControl_MvxTemplate = 0;
 			
 			public static int[] MvxExpandableListView = new int[] {
-					2130772334};
+					2130772335};
 			
 			// aapt resource value: 0
 			public const int MvxExpandableListView_MvxGroupItemTemplate = 0;
 			
 			public static int[] MvxListView = new int[] {
-					2130772332,
-					2130772333};
+					2130772333,
+					2130772334};
 			
 			// aapt resource value: 1
 			public const int MvxListView_MvxDropDownItemTemplate = 1;
 			
 			// aapt resource value: 0
 			public const int MvxListView_MvxItemTemplate = 0;
+			
+			public static int[] MvxRecyclerView = new int[] {
+					2130772329};
+			
+			// aapt resource value: 0
+			public const int MvxRecyclerView_MvxTemplateSelector = 0;
 			
 			public static int[] PopupWindow = new int[] {
 					16843126,

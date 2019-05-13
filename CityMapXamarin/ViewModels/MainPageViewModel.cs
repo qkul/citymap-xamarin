@@ -21,7 +21,7 @@ namespace CityMapXamarin.ViewModels
 
         public  IMvxCommand NavigateToMapAsyncCommand  => new MvxAsyncCommand(DoNavigateToMapAsync);
 
-      
+        public IMvxCommand NavigateToCityAsyncCommand => new MvxAsyncCommand<City>(DoNavigateToCityAsync);
 
         public MainPageViewModel(INavigationManager navigationManager, ICityService cityService)
         {
@@ -45,9 +45,16 @@ namespace CityMapXamarin.ViewModels
             Cities = await _cityService.LoadCitiesAsync();
         }
 
+
         private async Task DoNavigateToMapAsync()
         {
             await _navigationManager.NavigateToMapAsync(_cities);
+        }
+
+      
+        private async Task DoNavigateToCityAsync(City city)
+        {
+            await _navigationManager.NavigateToCityAsync(city);
         }
     }
 }
