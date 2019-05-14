@@ -8,9 +8,21 @@ namespace CityMapXamarin.ViewModels
 {
     public class CityDetailsViewModel : MvxViewModel<City>
     {
+        City _city;
+
+        public City City
+        {
+            get => _city;
+            set
+            {
+                _city = value;
+                RaisePropertyChanged(() => City);
+            }
+        }
+
         public override void Prepare(City parameter)
         {
-            throw new NotImplementedException();
+            _city = parameter;
         }
     }
 }

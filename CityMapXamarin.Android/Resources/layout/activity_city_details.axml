@@ -16,13 +16,14 @@
                 android:layout_height="200dp"
                 android:src="@drawable/default123"
             />
-            <FFImageLoading.Views.ImageViewAsync
+            <ImageView
                 android:id="@+id/image_city_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop" 
             />
+			
             </android.support.constraint.ConstraintLayout>
         
     <TextView

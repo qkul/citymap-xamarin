@@ -18,7 +18,7 @@ using MvvmCross.Platforms.Android.Views;
 
 namespace CityMapXamarin.Android.Views
 {
-    [Activity(Label = "Main Page")]
+    [Activity(Label = "Cities")]
     public class MainPageView : MvxActivity<MainPageViewModel>
     {
         private MvxRecyclerView _recyclerView;
@@ -29,7 +29,7 @@ namespace CityMapXamarin.Android.Views
             base.OnCreate(bundle);
 
             _adapter = new CityAdapter((IMvxAndroidBindingContext)BindingContext);
-            SetContentView(Resource.Layout.activity_main_page);
+            SetContentView(Resource.Layout.activity_cities);
             InitComponets();
             AppBindings();
         }
@@ -43,10 +43,10 @@ namespace CityMapXamarin.Android.Views
 
         private void AppBindings()
         {
-            MvxFluentBindingDescriptionSet<MainPageView, MainPageViewModel> set = this.CreateBindingSet<MainPageView, MainPageViewModel>();//var !
-            set.Bind(_btnMap).To(vm => vm.NavigateToMapAsyncCommand);
+            MvxFluentBindingDescriptionSet<MainPageView, MainPageViewModel> set = this.CreateBindingSet<MainPageView, MainPageViewModel>();//var !           
             set.Bind(_adapter).For(b => b.CityClick).To(vm => vm.NavigateToCityAsyncCommand);
             set.Bind(_adapter).For(b => b.ItemsSource).To(vm => vm.Cities);
+            set.Bind(_btnMap).To(vm => vm.NavigateToMapAsyncCommand);
             set.Apply();
         }
 

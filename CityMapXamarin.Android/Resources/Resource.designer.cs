@@ -2587,8 +2587,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a005b
 			public const int buttonPanel = 2131361883;
 			
-			// aapt resource value: 0x7f0a0084
-			public const int button_map_id = 2131361924;
+			// aapt resource value: 0x7f0a0083
+			public const int button_map_id = 2131361923;
 			
 			// aapt resource value: 0x7f0a008f
 			public const int cancel_action = 2131361935;
@@ -2602,8 +2602,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0097
 			public const int chronometer = 2131361943;
 			
-			// aapt resource value: 0x7f0a0083
-			public const int cityItemCell = 2131361923;
+			// aapt resource value: 0x7f0a0087
+			public const int cityItem = 2131361927;
 			
 			// aapt resource value: 0x7f0a0039
 			public const int collapseActionView = 2131361849;
@@ -2680,8 +2680,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0057
 			public const int image = 2131361879;
 			
-			// aapt resource value: 0x7f0a0086
-			public const int image_city_details = 2131361926;
+			// aapt resource value: 0x7f0a0085
+			public const int image_city_details = 2131361925;
 			
 			// aapt resource value: 0x7f0a0088
 			public const int image_city_item = 2131361928;
@@ -2770,8 +2770,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a006d
 			public const int radio = 2131361901;
 			
-			// aapt resource value: 0x7f0a0085
-			public const int recycler_view_cities_list = 2131361925;
+			// aapt resource value: 0x7f0a0084
+			public const int recycler_view_cities_list = 2131361924;
 			
 			// aapt resource value: 0x7f0a0040
 			public const int right = 2131361856;
@@ -2902,8 +2902,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0a0061
 			public const int textSpacerNoTitle = 2131361889;
 			
-			// aapt resource value: 0x7f0a0087
-			public const int text_view_city_details = 2131361927;
+			// aapt resource value: 0x7f0a0086
+			public const int text_view_city_details = 2131361926;
 			
 			// aapt resource value: 0x7f0a0089
 			public const int text_view_city_title = 2131361929;

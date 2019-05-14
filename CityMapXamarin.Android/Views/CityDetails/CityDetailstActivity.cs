@@ -5,63 +5,49 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using CityMapXamarin.Android.Resources;
 using CityMapXamarin.Android.Views.CitiesMap;
+using CityMapXamarin.ViewModels;
 using FFImageLoading;
 using FFImageLoading.Views;
+using MvvmCross.Binding.BindingContext;
+using MvvmCross.Platforms.Android.Views;
 using Newtonsoft.Json;
 
 namespace CityMapXamarin.Android.Views.CityDetails
 {
     [Activity]
-    public class CityDetailsActivity : AppCompatActivity
+    public class CityDetailsActivity : MvxActivity<CityDetailsViewModel>
     {
-        private string _cityName;
-        private string _cityDescription;
-        private string _cityImageUrl;
+        private ImageView _imageViewCity;
+        private TextView _textViewCity;
+
+        //private string _cityName;
+        
+        //private string _cityDescription;
+        //private string _cityImageUrl;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_city_details);
-            LoadNavigationParameters();
-            SetupToolbar();
-            SetupUI();
+            InitComponets();
+            AppBindings();
         }
 
-
-        private void LoadNavigationParameters()
+        private void InitComponets()
         {
-            var extras = Intent.Extras;
-
-            _cityName = extras.GetString(ConstView.ExtraCityName, string.Empty);
-            _cityDescription = extras.GetString(ConstView.ExtraCityDescription, string.Empty);
-            _cityImageUrl = extras.GetString(ConstView.ExtraCityImageUrl, string.Empty);
+            _imageViewCity = FindViewById<ImageView>(Resource.Id.image_city_details);
+            _textViewCity = FindViewById<TextView>(Resource.Id.text_view_city_details);
+       
         }
 
-        private void SetupToolbar()
+        private void AppBindings()
         {
-            var contraction = SupportActionBar;     
-            contraction.SetDisplayHomeAsUpEnabled(true);
-            contraction.SetDisplayShowHomeEnabled(true);
-        
-            contraction.Title = _cityName;
-        }
-        public override bool OnSupportNavigateUp()
-        {
-            OnBackPressed();
-            return true;
-        }
-    
-        private void SetupUI()
-        {
-            var descriptionTextView = FindViewById<TextView>(Resource.Id.text_view_city_details);
-            var photoImageView = FindViewById<ImageViewAsync>(Resource.Id.image_city_details);
-
-            descriptionTextView.Text = _cityDescription;
-
-            ImageService.Instance
-                .LoadUrl(_cityImageUrl)
-                .Into(photoImageView);
+            var set = this.CreateBindingSet<CityDetailsActivity, CityDetailsViewModel>();
+            //set.Bind(_imageViewCity).For(x => x.Drawable).To(vm => vm.City);
+            set.Bind(_textViewCity).For(x=>x.Text).To(vm=>vm.City.Description);
+            set.Apply();
         }
     }
 }

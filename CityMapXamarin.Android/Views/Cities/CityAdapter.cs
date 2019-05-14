@@ -13,9 +13,9 @@ namespace CityMapXamarin.Android.Views.Cities
 {
     public class CityAdapter : MvxRecyclerAdapter
     {
-        private readonly IList<City> _cities = new List<City>();
+        //private readonly IList<City> _cities = new List<City>();
         public ICommand CityClick { get; set; }
-        public event EventHandler<int> ItemClicked;
+       // public event EventHandler<int> ItemClicked;
 
         public CityAdapter(IMvxAndroidBindingContext bindingContext) : base(bindingContext)
         {

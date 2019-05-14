@@ -19,94 +19,94 @@ namespace CityMapXamarin.Android.Views.Cities
     [Activity(Label = "@string/activity_cities_title")]
     public class CityActivity : AppCompatActivity
     {
-        private readonly ICityService _cityService = new CityService();
-        private CityAdapter _cityAdapter;
-        private ProgressDialog _progressDialog;
+        //private readonly ICityService _cityService = new CityService();
+        //private CityAdapter _cityAdapter;
+        //private ProgressDialog _progressDialog;
 
-        private IEnumerable<City> Cities { get; set; } = Enumerable.Empty<City>();
+        //private IEnumerable<City> Cities { get; set; } = Enumerable.Empty<City>();
 
-        protected override async void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.activity_cities);
-            _progressDialog = CreateProgressDialog();
-            //SetupAdapter();
-            SetupRecyclerView();
-            //await LoadDataAsync();
-        }
-
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            switch (item.ItemId)
-            {
-                case Resource.Id.show_on_map:
-                {
-                    var mapActivityIntent = new Intent(this, typeof(CitiesMapActivity));
-                    mapActivityIntent.PutExtra(ConstView.ExtraCities, JsonConvert.SerializeObject(Cities));
-                    StartActivity(mapActivityIntent);
-                    break;
-                }
-            }
-            return true;
-        }
-        public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            MenuInflater.Inflate(Resource.Menu.cities_map, menu);
-            return base.OnCreateOptionsMenu(menu);
-        }
-        private void SetupRecyclerView()
-        {
-            var gridCount = Resources.GetInteger(Resource.Integer.grid_count);
-            var citiesLayoutManager = new GridLayoutManager(ApplicationContext, gridCount);
-            var citiesRecyclerView = FindViewById<RecyclerView>(Resource.Id.recycler_view_cities_list);
-
-            citiesRecyclerView.SetLayoutManager(citiesLayoutManager);
-            citiesRecyclerView.SetAdapter(_cityAdapter);
-        }
-
-        //private void SetupAdapter()
+        //protected override async void OnCreate(Bundle savedInstanceState)
         //{
-        //    _cityAdapter = new CityAdapter();
-        //    _cityAdapter.ItemClicked += CityAdapterOnItemClicked;
+        //    base.OnCreate(savedInstanceState);
+        //    SetContentView(Resource.Layout.activity_cities);
+        //    _progressDialog = CreateProgressDialog();
+        //    //SetupAdapter();
+        //    SetupRecyclerView();
+        //    //await LoadDataAsync();
         //}
 
-        //private async Task LoadDataAsync()
+        //public override bool OnOptionsItemSelected(IMenuItem item)
         //{
-        //    _progressDialog.Show();
-
-        //    try
+        //    switch (item.ItemId)
         //    {
-        //        Cities = await _cityService.LoadCitiesAsync();
-        //        _cityAdapter.Update(Cities);
+        //        case Resource.Id.show_on_map:
+        //        {
+        //            var mapActivityIntent = new Intent(this, typeof(CitiesMapActivity));
+        //            mapActivityIntent.PutExtra(ConstView.ExtraCities, JsonConvert.SerializeObject(Cities));
+        //            StartActivity(mapActivityIntent);
+        //            break;
+        //        }
         //    }
+        //    return true;
+        //}
+        //public override bool OnCreateOptionsMenu(IMenu menu)
+        //{
+        //    MenuInflater.Inflate(Resource.Menu.cities_map, menu);
+        //    return base.OnCreateOptionsMenu(menu);
+        //}
+        //private void SetupRecyclerView()
+        //{
+        //    var gridCount = Resources.GetInteger(Resource.Integer.grid_count);
+        //    var citiesLayoutManager = new GridLayoutManager(ApplicationContext, gridCount);
+        //    var citiesRecyclerView = FindViewById<RecyclerView>(Resource.Id.recycler_view_cities_list);
 
-        //    finally
-        //    {
-        //        _progressDialog.Hide();
-        //    }
+        //    citiesRecyclerView.SetLayoutManager(citiesLayoutManager);
+        //    citiesRecyclerView.SetAdapter(_cityAdapter);
         //}
 
-        private void CityAdapterOnItemClicked(object sender, int position)
-        {
-            var cityModel = Cities.ToArray()[position];
+        ////private void SetupAdapter()
+        ////{
+        ////    _cityAdapter = new CityAdapter();
+        ////    _cityAdapter.ItemClicked += CityAdapterOnItemClicked;
+        ////}
 
-            var detailedActivityIntent = new Intent(this, typeof(CityDetailsActivity));
-            detailedActivityIntent.PutExtra(ConstView.ExtraCityName, cityModel.Title);
-            detailedActivityIntent.PutExtra(ConstView.ExtraCityDescription, cityModel.Description);
-            detailedActivityIntent.PutExtra(ConstView.ExtraCityImageUrl, cityModel.Url);
+        ////private async Task LoadDataAsync()
+        ////{
+        ////    _progressDialog.Show();
 
-            StartActivity(detailedActivityIntent);
-        }
-        private ProgressDialog CreateProgressDialog() => new ProgressDialog(this) { Indeterminate = true };
+        ////    try
+        ////    {
+        ////        Cities = await _cityService.LoadCitiesAsync();
+        ////        _cityAdapter.Update(Cities);
+        ////    }
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                _cityAdapter.ItemClicked -= CityAdapterOnItemClicked;
-            }
+        ////    finally
+        ////    {
+        ////        _progressDialog.Hide();
+        ////    }
+        ////}
 
-            base.Dispose(disposing);
-        }
+        //private void CityAdapterOnItemClicked(object sender, int position)
+        //{
+        //    var cityModel = Cities.ToArray()[position];
+
+        //    var detailedActivityIntent = new Intent(this, typeof(CityDetailsActivity));
+        //    detailedActivityIntent.PutExtra(ConstView.ExtraCityName, cityModel.Title);
+        //    detailedActivityIntent.PutExtra(ConstView.ExtraCityDescription, cityModel.Description);
+        //    detailedActivityIntent.PutExtra(ConstView.ExtraCityImageUrl, cityModel.Url);
+
+        //    StartActivity(detailedActivityIntent);
+        //}
+        //private ProgressDialog CreateProgressDialog() => new ProgressDialog(this) { Indeterminate = true };
+
+        //protected override void Dispose(bool disposing)
+        //{
+        //    if (disposing)
+        //    {
+        //        _cityAdapter.ItemClicked -= CityAdapterOnItemClicked;
+        //    }
+
+        //    base.Dispose(disposing);
+        //}
     }
 }
