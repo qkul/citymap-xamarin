@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
+﻿using Android.App;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
+using Android.Support.V7.Widget;
 using Android.Widget;
 using CityMapXamarin.Android.Views.Cities;
 using CityMapXamarin.ViewModels;
@@ -36,14 +29,18 @@ namespace CityMapXamarin.Android.Views
 
         private void InitComponets()
         {
+            var gridCount = Resources.GetInteger(Resource.Integer.grid_count);
+            var citiesLayoutManager = new GridLayoutManager(ApplicationContext, gridCount);
+
             _recyclerView = FindViewById<MvxRecyclerView>(Resource.Id.recycler_view_cities_list);
+            _recyclerView.SetLayoutManager(citiesLayoutManager);
             _recyclerView.Adapter = _adapter;
             _btnMap = FindViewById<Button>(Resource.Id.button_map_id);
         }
 
         private void AppBindings()
         {
-            MvxFluentBindingDescriptionSet<MainPageView, MainPageViewModel> set = this.CreateBindingSet<MainPageView, MainPageViewModel>();//var !           
+            var set = this.CreateBindingSet<MainPageView, MainPageViewModel>();
             set.Bind(_adapter).For(b => b.CityClick).To(vm => vm.NavigateToCityAsyncCommand);
             set.Bind(_adapter).For(b => b.ItemsSource).To(vm => vm.Cities);
             set.Bind(_btnMap).To(vm => vm.NavigateToMapAsyncCommand);
