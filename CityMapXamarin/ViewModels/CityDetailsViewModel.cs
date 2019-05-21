@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using CityMapXamarin.Models;
+﻿using CityMapXamarin.Models;
 using MvvmCross.ViewModels;
 
 namespace CityMapXamarin.ViewModels

@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text;
-using System.Threading.Tasks;
-using CityMapXamarin.Infrastructure;
+﻿using CityMapXamarin.Infrastructure;
 using CityMapXamarin.Models;
 using CityMapXamarin.ViewModels;
 using MvvmCross.Navigation;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace CityMapXamarin.Services
 {

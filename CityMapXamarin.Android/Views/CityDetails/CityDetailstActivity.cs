@@ -1,18 +1,11 @@
 ﻿
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Support.V7.App;
-using Android.Views;
 using Android.Widget;
 using CityMapXamarin.Android.Resources;
-using CityMapXamarin.Android.Views.CitiesMap;
 using CityMapXamarin.ViewModels;
-using FFImageLoading;
-using FFImageLoading.Views;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platforms.Android.Views;
-using Newtonsoft.Json;
 
 namespace CityMapXamarin.Android.Views.CityDetails
 {
@@ -21,11 +14,6 @@ namespace CityMapXamarin.Android.Views.CityDetails
     {
         private ImageView _imageViewCity;
         private TextView _textViewCity;
-
-        //private string _cityName;
-        
-        //private string _cityDescription;
-        //private string _cityImageUrl;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {

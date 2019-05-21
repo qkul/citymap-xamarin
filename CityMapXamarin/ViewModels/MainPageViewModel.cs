@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using CityMapXamarin.Infrastructure;
+﻿using CityMapXamarin.Infrastructure;
 using CityMapXamarin.Models;
 using MvvmCross.Commands;
 using MvvmCross.ViewModels;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace CityMapXamarin.ViewModels
 {
@@ -17,7 +13,6 @@ namespace CityMapXamarin.ViewModels
         private readonly ICityService _cityService;
 
         private IEnumerable<City> _cities;
-
 
         public  IMvxCommand NavigateToMapAsyncCommand  => new MvxAsyncCommand(DoNavigateToMapAsync);
 

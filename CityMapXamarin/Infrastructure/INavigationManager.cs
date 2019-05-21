@@ -1,9 +1,6 @@
-﻿using System;
+﻿using CityMapXamarin.Models;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text;
 using System.Threading.Tasks;
-using CityMapXamarin.Models;
 
 namespace CityMapXamarin.Infrastructure
 {

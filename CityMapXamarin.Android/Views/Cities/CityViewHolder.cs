@@ -1,14 +1,12 @@
-﻿using Android.Support.V7.Widget;
+﻿using Android.Support.Constraints;
 using Android.Views;
 using Android.Widget;
-using FFImageLoading.Views;
-using System;
-using Android.Support.Constraints;
 using CityMapXamarin.Android.Resources;
 using CityMapXamarin.Models;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Droid.Support.V7.RecyclerView;
 using MvvmCross.Platforms.Android.Binding.BindingContext;
+using System;
 
 namespace CityMapXamarin.Android.Views.Cities
 {
