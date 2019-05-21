@@ -15,7 +15,7 @@ namespace CityMapXamarin.Android.Views.Cities
     internal class CityViewHolder : MvxRecyclerViewHolder
     {
         private TextView _titleTextView { get; set; }
-        private ImageViewAsync _photoImageView { get; set; }
+        private ImageView _photoImageView { get; set; }
         private ConstraintLayout _linearLayout { get; set; } 
         public event EventHandler CityClicked;
 
@@ -30,9 +30,9 @@ namespace CityMapXamarin.Android.Views.Cities
             bindingSet.Bind(_titleTextView)
                 .For(p => p.Text)
                 .To(vm => vm.Title);
-            //bindingSet.Bind(_photoImageView)
-            //    .For(p => p.Drawable)
-            //    .To(m => m.Title).WithConversion<ImagePathToDrawableConverter>();
+            bindingSet.Bind(_photoImageView)
+                .For(p => p.Drawable)
+                .To(m => m.Url).WithConversion<ImagePathToDrawableConverter>();
 
             bindingSet.Apply();
         }
@@ -40,7 +40,7 @@ namespace CityMapXamarin.Android.Views.Cities
         private void InitComponents(View itemView)
         {
             _titleTextView = itemView.FindViewById<TextView>(Resource.Id.text_view_city_title);
-            _photoImageView = itemView.FindViewById<ImageViewAsync>(Resource.Id.image_city_item);
+            _photoImageView = itemView.FindViewById<ImageView>(Resource.Id.image_city_item);
             _linearLayout = itemView.FindViewById<ConstraintLayout>(Resource.Id.cityItem);
 
             _linearLayout.Click += (s, e) =>

@@ -45,7 +45,7 @@ namespace CityMapXamarin.Android.Views.CityDetails
         private void AppBindings()
         {
             var set = this.CreateBindingSet<CityDetailsActivity, CityDetailsViewModel>();
-            //set.Bind(_imageViewCity).For(x => x.Drawable).To(vm => vm.City);
+            set.Bind(_imageViewCity).For(x => x.Drawable).To(vm => vm.City.Url).WithConversion<ImagePathToDrawableConverter>();
             set.Bind(_textViewCity).For(x=>x.Text).To(vm=>vm.City.Description);
             set.Apply();
         }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 
 using Android.App;
@@ -23,9 +24,17 @@ namespace CityMapXamarin.Android.Resources
         {
             Drawable image = null;
             var currentActivity = Mvx.Resolve<IMvxAndroidCurrentTopActivity>().Activity;
-            var decodedByte = BitmapFactory.DecodeFile($"{currentActivity.FilesDir}/{value}");
-            image = new BitmapDrawable(currentActivity.Resources, decodedByte);
 
+            using (var webClient = new WebClient())
+            {
+                byte[] imageBytes = webClient.DownloadData(value);
+
+                if (imageBytes.Length > 0)
+                {
+                    var decodedByte = BitmapFactory.DecodeByteArray(imageBytes,0,imageBytes.Length);
+                    image = new BitmapDrawable(currentActivity.Resources, decodedByte);
+                }          
+            }
             return image;
         }
     }

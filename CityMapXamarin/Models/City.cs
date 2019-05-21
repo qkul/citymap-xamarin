@@ -18,5 +18,6 @@ namespace CityMapXamarin.Models
         public double Latitude { get; set; }
         [JsonProperty]
         public double Longitude { get; set; }
+
     }
 }
