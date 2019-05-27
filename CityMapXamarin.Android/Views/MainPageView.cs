@@ -1,6 +1,9 @@
 ﻿using Android.App;
 using Android.OS;
+using Android.Support.Design.Widget;
+using Android.Support.V4.Widget;
 using Android.Support.V7.Widget;
+using Android.Views;
 using Android.Widget;
 using CityMapXamarin.Android.Views.Cities;
 using CityMapXamarin.ViewModels;
@@ -17,6 +20,7 @@ namespace CityMapXamarin.Android.Views
         private MvxRecyclerView _recyclerView;
         private Button _btnMap;
         private CityAdapter _adapter;
+ 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -27,6 +31,7 @@ namespace CityMapXamarin.Android.Views
             AppBindings();
         }
 
+        
         private void InitComponets()
         {
             var gridCount = Resources.GetInteger(Resource.Integer.grid_count);

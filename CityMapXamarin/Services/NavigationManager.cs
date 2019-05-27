@@ -26,5 +26,9 @@ namespace CityMapXamarin.Services
         {
             await _navigationService.Navigate<CitiesMapViewModel, IEnumerable<City>>(cities);
         }
+        public async Task NavigateToSettingAsync()
+        {
+            await _navigationService.Navigate<SettingViewModel>();
+        }
     }
 }
