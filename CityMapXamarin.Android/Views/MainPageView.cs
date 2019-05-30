@@ -1,13 +1,11 @@
 ﻿using Android.App;
 using Android.OS;
-using Android.Support.Design.Widget;
-using Android.Support.V4.Widget;
 using Android.Support.V7.Widget;
-using Android.Views;
 using Android.Widget;
 using CityMapXamarin.Android.Views.Cities;
 using CityMapXamarin.ViewModels;
 using MvvmCross.Binding.BindingContext;
+using MvvmCross.Droid.Support.V7.AppCompat;
 using MvvmCross.Droid.Support.V7.RecyclerView;
 using MvvmCross.Platforms.Android.Binding.BindingContext;
 using MvvmCross.Platforms.Android.Views;
@@ -15,12 +13,12 @@ using MvvmCross.Platforms.Android.Views;
 namespace CityMapXamarin.Android.Views
 {
     [Activity(Label = "Cities")]
-    public class MainPageView : MvxActivity<MainPageViewModel>
+    public class MainPageView : MvxAppCompatActivity <MainPageViewModel>
     {
         private MvxRecyclerView _recyclerView;
         private Button _btnMap;
+        private Button _btnMenu;
         private CityAdapter _adapter;
- 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -31,7 +29,6 @@ namespace CityMapXamarin.Android.Views
             AppBindings();
         }
 
-        
         private void InitComponets()
         {
             var gridCount = Resources.GetInteger(Resource.Integer.grid_count);
@@ -41,6 +38,7 @@ namespace CityMapXamarin.Android.Views
             _recyclerView.SetLayoutManager(citiesLayoutManager);
             _recyclerView.Adapter = _adapter;
             _btnMap = FindViewById<Button>(Resource.Id.button_map_id);
+            _btnMenu = FindViewById<Button>(Resource.Id.button_menu_id);
         }
 
         private void AppBindings()
@@ -49,6 +47,7 @@ namespace CityMapXamarin.Android.Views
             set.Bind(_adapter).For(b => b.CityClick).To(vm => vm.NavigateToCityAsyncCommand);
             set.Bind(_adapter).For(b => b.ItemsSource).To(vm => vm.Cities);
             set.Bind(_btnMap).To(vm => vm.NavigateToMapAsyncCommand);
+            set.Bind(_btnMap).To(vm => vm.NavigateToMenuAsyncCommand);
             set.Apply();
         }
 

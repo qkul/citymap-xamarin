@@ -2,6 +2,7 @@
 using CityMapXamarin.Models;
 using MvvmCross.Commands;
 using MvvmCross.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -13,17 +14,19 @@ namespace CityMapXamarin.ViewModels
         private readonly ICityService _cityService;
 
         private IEnumerable<City> _cities;
-
+        public IMvxAsyncCommand ShowSplitCommand { get; }
         public  IMvxCommand NavigateToMapAsyncCommand  => new MvxAsyncCommand(DoNavigateToMapAsync);
-
+        
         public IMvxCommand NavigateToCityAsyncCommand => new MvxAsyncCommand<City>(DoNavigateToCityAsync);
+        public IMvxCommand NavigateToMenuAsyncCommand => new MvxAsyncCommand(DoNavigateToMenuAsync);
+
 
         public MainPageViewModel(INavigationManager navigationManager, ICityService cityService)
         {
             _navigationManager = navigationManager;
             _cityService = cityService;
         }
-
+        
         public IEnumerable<City> Cities
         {
             get => _cities;
@@ -46,7 +49,11 @@ namespace CityMapXamarin.ViewModels
             await _navigationManager.NavigateToMapAsync(_cities);
         }
 
-      
+
+        private async Task DoNavigateToMenuAsync()
+        {
+            await _navigationManager.NavigateToMenu();
+        }
         private async Task DoNavigateToCityAsync(City city)
         {
             await _navigationManager.NavigateToCityAsync(city);

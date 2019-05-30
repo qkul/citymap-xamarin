@@ -1,11 +1,17 @@
-﻿using MvvmCross.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MvvmCross.Logging;
+using MvvmCross.Navigation;
+using MvvmCross.ViewModels;
 
 namespace CityMapXamarin.ViewModels
 {
-    public class SettingViewModel : MvxViewModel
+    public class SettingViewModel : MvxNavigationViewModel
     {
+        public SettingViewModel(IMvxLogProvider logProvider, IMvxNavigationService navigationService) : base(
+            logProvider, navigationService)
+        {
+        }
     }
 }
