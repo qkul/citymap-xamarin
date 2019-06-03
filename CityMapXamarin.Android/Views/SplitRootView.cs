@@ -20,6 +20,7 @@ namespace CityMapXamarin.Android.Views
     {
         public DrawerLayout drawerLayout { get; set; }
 
+
         public SplitRootView()
         {
         }
@@ -35,7 +36,7 @@ namespace CityMapXamarin.Android.Views
             if (bundle == null)
             {
                 ViewModel.ShowInitialMenuCommand.Execute();
-                ViewModel.ShowDetailCommand.Execute();
+            
             }
         }
         public override void OnBackPressed()

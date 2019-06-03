@@ -30,5 +30,10 @@ namespace CityMapXamarin.Services
         {
             await _navigationService.Navigate<SplitRootViewModel>();
         }
+
+        public async Task NavigateToSetting()
+        {
+            await _navigationService.Navigate<SettingViewModel>();
+        }
     }
 }

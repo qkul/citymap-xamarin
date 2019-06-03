@@ -6,13 +6,14 @@ using Android.Support.V4.App;
 using CityMapXamarin.Models;
 using CityMapXamarin.ViewModels;
 using MvvmCross.Binding.BindingContext;
+using MvvmCross.Droid.Support.V7.AppCompat;
 using MvvmCross.Platforms.Android.Views;
 using System.Collections.Generic;
 
 namespace CityMapXamarin.Android.Views.CitiesMap
 {
     [Activity(Label = "CitiesMapActivity")]
-    public class CitiesMapActivity : MvxActivity<CitiesMapViewModel>, IOnMapReadyCallback
+    public class CitiesMapActivity : MvxAppCompatActivity<CitiesMapViewModel>, IOnMapReadyCallback
     {
         private GoogleMap _googleMap;
         public IEnumerable<City> NewCities { get; set; }

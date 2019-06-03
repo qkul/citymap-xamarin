@@ -38,7 +38,7 @@ namespace CityMapXamarin.Android.Views
             _recyclerView.SetLayoutManager(citiesLayoutManager);
             _recyclerView.Adapter = _adapter;
             _btnMap = FindViewById<Button>(Resource.Id.button_map_id);
-            _btnMenu = FindViewById<Button>(Resource.Id.button_menu_id);
+            _btnMenu = FindViewById<Button>(Resource.Id.button_menu);
         }
 
         private void AppBindings()
@@ -47,7 +47,7 @@ namespace CityMapXamarin.Android.Views
             set.Bind(_adapter).For(b => b.CityClick).To(vm => vm.NavigateToCityAsyncCommand);
             set.Bind(_adapter).For(b => b.ItemsSource).To(vm => vm.Cities);
             set.Bind(_btnMap).To(vm => vm.NavigateToMapAsyncCommand);
-            set.Bind(_btnMap).To(vm => vm.NavigateToMenuAsyncCommand);
+            set.Bind(_btnMenu).To(vm => vm.NavigateToMenuAsyncCommand);
             set.Apply();
         }
 

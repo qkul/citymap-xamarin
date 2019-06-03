@@ -18,8 +18,8 @@ namespace CityMapXamarin.Android
 {
     public class Setup : MvxAppCompatSetup<App>
     {
-        public override MvxLogProviderType GetDefaultLogProviderType()
-            => MvxLogProviderType.Serilog;
+        //public override MvxLogProviderType GetDefaultLogProviderType()
+        //    => MvxLogProviderType.Serilog;
 
     }
 }
