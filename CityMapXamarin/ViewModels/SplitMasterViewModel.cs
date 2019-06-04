@@ -1,6 +1,8 @@
 ﻿using MvvmCross.Commands;
 using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
+using System;
+using System.Threading.Tasks;
 
 namespace CityMapXamarin.ViewModels
 {
@@ -18,5 +20,15 @@ namespace CityMapXamarin.ViewModels
         {
             base.ViewAppeared();
         }
+        public void ShowViewModelAndroid()
+        {
+            _navigationService.Navigate<MainPageViewModel>();
+        }
+
+        public async Task ShowHome()
+        {
+            await _navigationService.Navigate<MainPageViewModel>();
+        }
+
     }
 }

@@ -23,12 +23,16 @@ namespace CityMapXamarin.Android.Views.Fragment
     public class SplitMasterView : MvxFragment<SplitMasterViewModel>, NavigationView.IOnNavigationItemSelectedListener
     {
         private IMenuItem previousMenuItem;
-
+        private NavigationView navigationView;
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             var ignore = base.OnCreateView(inflater, container, savedInstanceState);
 
             var view = this.BindingInflate(Resource.Layout.SplitMasterView, null);
+            navigationView = view.FindViewById<NavigationView>(Resource.Id.navigation_view);
+            navigationView.SetNavigationItemSelectedListener(this);
+            navigationView.Menu.FindItem(Resource.Id.nav_home).SetChecked(true);
+
 
             return view;
         }
@@ -53,8 +57,8 @@ namespace CityMapXamarin.Android.Views.Fragment
             switch (itemId)
             {           
                     case Resource.Id.nav_home:
-                        //ViewModel.ShowRootViewModel();
-                        break;
+                        ViewModel.ShowViewModelAndroid();
+                    break;
             }
         }
     }
