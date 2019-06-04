@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using CityMapXamarin.Infrastructure;
-using MvvmCross.Binding.Combiners;
-using MvvmCross.Commands;
-using MvvmCross.Logging;
+﻿using MvvmCross.Commands;
 using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
+using System.Threading.Tasks;
 
 namespace CityMapXamarin.ViewModels
 {
@@ -19,21 +13,21 @@ namespace CityMapXamarin.ViewModels
         public SplitRootViewModel(IMvxNavigationService navigationService)
         {
             _navigationService = navigationService;
-            ShowInitialMenuCommand = new MvxAsyncCommand(()=> _navigationService.Navigate<SplitMasterViewModel>() );
+            ShowInitialMenuCommand = new MvxAsyncCommand(ShowInitialViewModel);
         }
 
         public IMvxAsyncCommand ShowInitialMenuCommand { get; private set; }
 
-
-
         public override void ViewAppeared()
         {
-            MvxNotifyTask.Create(async () => { await _navigationService.Navigate<SplitMasterViewModel>();});
+            MvxNotifyTask.Create(async () =>
+            {
+                await ShowInitialViewModel();
+            });
         }
-
-        
-
-
-
+        private async Task ShowInitialViewModel()
+        {
+            await _navigationService.Navigate<SplitMasterViewModel>();
+        }
     }
 }

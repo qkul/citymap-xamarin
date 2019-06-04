@@ -11,7 +11,7 @@ using MvvmCross.Platforms.Android.Presenters.Attributes;
 namespace CityMapXamarin.Android.Views
 {
     [MvxActivityPresentation]
-    [Activity]
+   [Activity]
     public class SplitRootView : MvxAppCompatActivity<SplitRootViewModel>
     {
         public DrawerLayout drawerLayout { get; set; }

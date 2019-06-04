@@ -17,7 +17,7 @@ using MvvmCross.Platforms.Android.Presenters.Attributes;
 
 namespace CityMapXamarin.Android.Views.Fragment
 {
-    [MvxFragmentPresentation(typeof(SplitMasterViewModel), Resource.Id.split_navigation_frame)]
+    [MvxFragmentPresentation(typeof(SplitRootViewModel), Resource.Id.split_navigation_frame)]
     [Register(nameof(SplitMasterView))]
 
     public class SplitMasterView : MvxFragment<SplitMasterViewModel>, NavigationView.IOnNavigationItemSelectedListener
@@ -51,9 +51,10 @@ namespace CityMapXamarin.Android.Views.Fragment
             await Task.Delay(TimeSpan.FromMilliseconds(250));
 
             switch (itemId)
-            {
-                case Resource.Id.nav_home:
-                    break;
+            {           
+                    case Resource.Id.nav_home:
+                        //ViewModel.ShowRootViewModel();
+                        break;
             }
         }
     }
