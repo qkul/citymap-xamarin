@@ -13,9 +13,13 @@ using Android.Widget;
 using CityMapXamarin.ViewModels;
 using MvvmCross.Droid.Support.V4;
 using MvvmCross.Platforms.Android.Binding.BindingContext;
+using MvvmCross.Platforms.Android.Presenters.Attributes;
 
 namespace CityMapXamarin.Android.Views.Fragment
 {
+    [MvxFragmentPresentation(typeof(SplitMasterViewModel), Resource.Id.split_navigation_frame)]
+    [Register(nameof(SplitMasterView))]
+
     public class SplitMasterView : MvxFragment<SplitMasterViewModel>, NavigationView.IOnNavigationItemSelectedListener
     {
         private IMenuItem previousMenuItem;

@@ -8,13 +8,13 @@ using System.Text;
 
 namespace CityMapXamarin.ViewModels
 {
-    public class SplitMasterViewModel : MvxNavigationViewModel
+    public class SplitMasterViewModel : MvxViewModel
     {
-        public SplitMasterViewModel(IMvxLogProvider logProvider, IMvxNavigationService navigationService) : base(logProvider, navigationService)
+        private readonly IMvxNavigationService _navigationService;
+        public SplitMasterViewModel(IMvxNavigationService navigationService)
         {
-      
-
-            ShowRootViewModel = new MvxAsyncCommand(async () => await NavigationService.Navigate<MainPageViewModel>());
+            _navigationService = navigationService;
+            ShowRootViewModel = new MvxAsyncCommand(() => _navigationService.Navigate<MainPageViewModel>());
         }
 
         public string PaneText => "Text for the Master Pane";

@@ -15,6 +15,7 @@ namespace CityMapXamarin.Android.Views
     [Activity(Label = "Cities")]
     public class MainPageView : MvxAppCompatActivity <MainPageViewModel>
     {
+        
         private MvxRecyclerView _recyclerView;
         private Button _btnMap;
         private Button _btnMenu;

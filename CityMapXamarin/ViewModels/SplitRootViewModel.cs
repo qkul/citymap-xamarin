@@ -11,31 +11,29 @@ using MvvmCross.ViewModels;
 
 namespace CityMapXamarin.ViewModels
 {
-    public class SplitRootViewModel : MvxNavigationViewModel
+    public class SplitRootViewModel : MvxViewModel
     {
-        public SplitRootViewModel(IMvxLogProvider logProvider, IMvxNavigationService navigationService) : base(logProvider, navigationService)
+
+        private readonly IMvxNavigationService _navigationService;
+
+        public SplitRootViewModel(IMvxNavigationService navigationService)
         {
-            ShowInitialMenuCommand = new MvxAsyncCommand(ShowInitialViewModel);
-        
+            _navigationService = navigationService;
+            ShowInitialMenuCommand = new MvxAsyncCommand(()=> _navigationService.Navigate<SplitMasterViewModel>() );
         }
 
         public IMvxAsyncCommand ShowInitialMenuCommand { get; private set; }
 
-      
+
 
         public override void ViewAppeared()
         {
-            MvxNotifyTask.Create(async () => {
-                await ShowInitialViewModel();
-
-            });
+            MvxNotifyTask.Create(async () => { await _navigationService.Navigate<SplitMasterViewModel>();});
         }
 
-        private async Task ShowInitialViewModel()
-        {
-            await NavigationService.Navigate<SplitMasterViewModel>();
-        }
+        
 
-     
+
+
     }
 }
