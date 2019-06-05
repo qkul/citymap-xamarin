@@ -28,7 +28,7 @@ namespace CityMapXamarin.Services
         }
         public async Task NavigateToMenu()
         {
-            await _navigationService.Navigate<SplitRootViewModel>();
+            await _navigationService.Navigate<MainPageViewModel>();
         }
 
         public async Task NavigateToSetting()

@@ -7,11 +7,8 @@ using MvvmCross.ViewModels;
 
 namespace CityMapXamarin.ViewModels
 {
-    public class SettingViewModel : MvxNavigationViewModel
+    public class SettingViewModel : MvxViewModel
     {
-        public SettingViewModel(IMvxLogProvider logProvider, IMvxNavigationService navigationService) : base(
-            logProvider, navigationService)
-        {
-        }
+       
     }
 }
