@@ -8,32 +8,27 @@
 		android:fitsSystemWindows="true"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent">
+      <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+          <Button
+             android:text="Map"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="4dp"
+             android:id="@+id/button_map_id"/>
+           
+	      <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+              android:id="@+id/recycler_view_cities_list"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp"/>
+     </LinearLayout>
 	</android.support.design.widget.CoordinatorLayout>
         	<FrameLayout android:id="@+id/split_navigation_frame"
 		android:layout_height="match_parent"
 		android:layout_width="wrap_content"
 		android:layout_gravity="left|start" />
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:local="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-  <Button
-    android:id="@+id/button_menu"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
-    android:text="show page menu"
- /> 
-  <Button
-        android:text="Map"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_map_id"/>
-	<MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
-        android:id="@+id/recycler_view_cities_list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp"/>
-</LinearLayout>
+
 </android.support.v4.widget.DrawerLayout>

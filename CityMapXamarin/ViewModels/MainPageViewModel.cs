@@ -19,11 +19,9 @@ namespace CityMapXamarin.ViewModels
         public IMvxAsyncCommand ShowSplitCommand { get; }
         public  IMvxCommand NavigateToMapAsyncCommand  => new MvxAsyncCommand(DoNavigateToMapAsync);      
         public IMvxCommand NavigateToCityAsyncCommand => new MvxAsyncCommand<City>(DoNavigateToCityAsync);
-        public IMvxCommand NavigateToMenuAsyncCommand => new MvxAsyncCommand(DoNavigateToMenuAsync);
         public IMvxAsyncCommand ShowInitialMenuCommand { get; private set; }
 
-    
-    
+       
 
         public MainPageViewModel(IMvxNavigationService navigationService,INavigationManager navigationManager, ICityService cityService)
         {
@@ -66,10 +64,6 @@ namespace CityMapXamarin.ViewModels
         }
 
 
-        private async Task DoNavigateToMenuAsync()
-        {
-            await _navigationManager.NavigateToMenu();
-        }
         private async Task DoNavigateToCityAsync(City city)
         {
             await _navigationManager.NavigateToCityAsync(city);

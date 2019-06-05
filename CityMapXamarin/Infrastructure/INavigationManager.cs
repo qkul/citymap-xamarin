@@ -8,7 +8,6 @@ namespace CityMapXamarin.Infrastructure
     {
         Task NavigateToCityAsync(City city);
         Task NavigateToMapAsync(IEnumerable<City> cities);
-        Task NavigateToMenu();
         Task NavigateToSetting();
     }
 }
