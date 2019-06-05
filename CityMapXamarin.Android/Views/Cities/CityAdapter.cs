@@ -4,51 +4,32 @@ using CityMapXamarin.Models;
 using FFImageLoading;
 using System;
 using System.Collections.Generic;
+using System.Windows.Input;
+using MvvmCross.Binding.BindingContext;
+using MvvmCross.Droid.Support.V7.RecyclerView;
+using MvvmCross.Platforms.Android.Binding.BindingContext;
 
 namespace CityMapXamarin.Android.Views.Cities
 {
-    internal class CityAdapter : RecyclerView.Adapter
-    {
-        private readonly IList<City> _cities = new List<City>();
+    public class CityAdapter : MvxRecyclerAdapter
+    {       
+        public ICommand CityClick { get; set; }
 
-        public event EventHandler<int> ItemClicked;
-
-        public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
+        public CityAdapter(IMvxAndroidBindingContext bindingContext) : base(bindingContext)
         {
-            if (holder is CityViewHolder cityViewHolder)
-            {
-                var cityModel = _cities[position];
-
-                cityViewHolder.TitleTextView.Text = cityModel.Title;
-
-                ImageService.Instance
-                    .LoadUrl(cityModel.Url)
-                    .Into(cityViewHolder.PhotoImageView);
-            }
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
-            var itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.activity_city_item, parent, false);
-            return new CityViewHolder(itemView, OnItemClicked);
-        }
-
-        public override int ItemCount => _cities.Count;
-
-        public void Update(IEnumerable<City> cities)
-        {
-            _cities.Clear();
-
-            foreach (var city in cities)
+            var itemBindingContext = new MvxAndroidBindingContext(parent.Context, BindingContext?.LayoutInflaterHolder);           
+            var itemView = itemBindingContext.BindingInflate(Resource.Layout.activity_city_item, parent, false);
+            var viewHolder = new CityViewHolder(itemView,itemBindingContext);
+            viewHolder.CityClicked += (s, e) =>
             {
-                _cities.Add(city);
-            }
-            NotifyDataSetChanged();
-        }
+                CityClick.Execute(s);
+            };
 
-        protected virtual void OnItemClicked(int position)
-        {
-            ItemClicked?.Invoke(this, position);
-        }
+            return viewHolder;
+        }      
     }
 }

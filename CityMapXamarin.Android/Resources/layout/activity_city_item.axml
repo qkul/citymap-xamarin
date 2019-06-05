@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="3dp">
+    android:padding="3dp"
+	android:id="@+id/cityItem">
    <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -15,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/default123"
     />
-    <FFImageLoading.Views.ImageViewAsync
+    <ImageView
         android:id="@+id/image_city_item"
         android:layout_width="0dp"
         android:layout_height="0dp"

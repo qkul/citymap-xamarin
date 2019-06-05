@@ -12,7 +12,7 @@ namespace CityMapXamarin.Services
 {
     public class CityService : ICityService
     {
-        private const string ApiUrl = "https://api.myjson.com/bins/7ybe5";
+        private const string ApiUrl = "http://api.myjson.com/bins/7ybe5";
 
         public async Task<IEnumerable<City>> LoadCitiesAsync()
         {
