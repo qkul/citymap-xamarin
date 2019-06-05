@@ -22,7 +22,6 @@ namespace CityMapXamarin.Android.Views
         
         private MvxRecyclerView _recyclerView;
         private Button _btnMap;
-        private Button _btnMenu;
         private CityAdapter _adapter;
         public DrawerLayout drawerLayout { get; set; }
 
@@ -58,7 +57,6 @@ namespace CityMapXamarin.Android.Views
             _recyclerView.SetLayoutManager(citiesLayoutManager);
             _recyclerView.Adapter = _adapter;
             _btnMap = FindViewById<Button>(Resource.Id.button_map_id);
-            _btnMenu = FindViewById<Button>(Resource.Id.button_menu);
             drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
         }
 
@@ -68,7 +66,6 @@ namespace CityMapXamarin.Android.Views
             set.Bind(_adapter).For(b => b.CityClick).To(vm => vm.NavigateToCityAsyncCommand);
             set.Bind(_adapter).For(b => b.ItemsSource).To(vm => vm.Cities);
             set.Bind(_btnMap).To(vm => vm.NavigateToMapAsyncCommand);
-            set.Bind(_btnMenu).To(vm => vm.NavigateToMenuAsyncCommand);
             set.Apply();
         }
 
