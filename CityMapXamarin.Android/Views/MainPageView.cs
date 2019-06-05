@@ -3,6 +3,7 @@ using Android.OS;
 using Android.Support.V4.View;
 using Android.Support.V4.Widget;
 using Android.Support.V7.Widget;
+using Android.Views.InputMethods;
 using Android.Widget;
 using CityMapXamarin.Android.Views.Cities;
 using CityMapXamarin.ViewModels;
@@ -47,6 +48,16 @@ namespace CityMapXamarin.Android.Views
                 drawerLayout.CloseDrawers();
             else
                 base.OnBackPressed();
+        }
+        public void HideSoftKeyboard()
+        {
+            if (CurrentFocus == null)
+                return;
+
+            InputMethodManager inputMethodManager = (InputMethodManager)GetSystemService(InputMethodService);
+            inputMethodManager.HideSoftInputFromWindow(CurrentFocus.WindowToken, 0);
+
+            CurrentFocus.ClearFocus();
         }
         private void InitComponets()
         {

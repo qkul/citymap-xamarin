@@ -8798,6 +8798,9 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0d004c
 			public const int always = 2131558476;
 			
+			// aapt resource value: 0x7f0d00e3
+			public const int appbar = 2131558627;
+			
 			// aapt resource value: 0x7f0d007d
 			public const int async = 2131558525;
 			
@@ -9032,8 +9035,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0d00bf
 			public const int map = 2131558591;
 			
-			// aapt resource value: 0x7f0d00e4
-			public const int masked = 2131558628;
+			// aapt resource value: 0x7f0d00e6
+			public const int masked = 2131558630;
 			
 			// aapt resource value: 0x7f0d00d5
 			public const int media_actions = 2131558613;
@@ -9056,14 +9059,14 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0d003c
 			public const int multiply = 2131558460;
 			
-			// aapt resource value: 0x7f0d00e7
-			public const int nav_home = 2131558631;
-			
-			// aapt resource value: 0x7f0d00e6
-			public const int nav_items = 2131558630;
+			// aapt resource value: 0x7f0d00e9
+			public const int nav_home = 2131558633;
 			
 			// aapt resource value: 0x7f0d00e8
-			public const int nav_setting = 2131558632;
+			public const int nav_items = 2131558632;
+			
+			// aapt resource value: 0x7f0d00ea
+			public const int nav_setting = 2131558634;
 			
 			// aapt resource value: 0x7f0d00c6
 			public const int navigation_header_container = 2131558598;
@@ -9212,8 +9215,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0d0039
 			public const int showTitle = 2131558457;
 			
-			// aapt resource value: 0x7f0d00e5
-			public const int show_on_map = 2131558629;
+			// aapt resource value: 0x7f0d00e7
+			public const int show_on_map = 2131558631;
 			
 			// aapt resource value: 0x7f0d00c0
 			public const int smallLabel = 2131558592;
@@ -9341,6 +9344,9 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0d0096
 			public const int title_template = 2131558550;
 			
+			// aapt resource value: 0x7f0d00e4
+			public const int toolbar = 2131558628;
+			
 			// aapt resource value: 0x7f0d0052
 			public const int top = 2131558482;
 			
@@ -9380,8 +9386,8 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f0d001b
 			public const int view_offset_helper = 2131558427;
 			
-			// aapt resource value: 0x7f0d00e3
-			public const int visible = 2131558627;
+			// aapt resource value: 0x7f0d00e5
+			public const int visible = 2131558629;
 			
 			// aapt resource value: 0x7f0d002f
 			public const int wide = 2131558447;
@@ -9710,6 +9716,9 @@ namespace CityMapXamarin.Android
 			// aapt resource value: 0x7f040046
 			public const int support_simple_spinner_dropdown_item = 2130968646;
 			
+			// aapt resource value: 0x7f040047
+			public const int toolbar_actionbar = 2130968647;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -9949,6 +9958,12 @@ namespace CityMapXamarin.Android
 			
 			// aapt resource value: 0x7f0a0010
 			public const int common_signin_button_text_long = 2131361808;
+			
+			// aapt resource value: 0x7f0a004d
+			public const int drawer_close = 2131361869;
+			
+			// aapt resource value: 0x7f0a004c
+			public const int drawer_open = 2131361868;
 			
 			// aapt resource value: 0x7f0a0047
 			public const int fab_scroll_shrink_grow_autohide_behavior = 2131361863;

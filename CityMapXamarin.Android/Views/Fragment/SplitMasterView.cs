@@ -32,8 +32,6 @@ namespace CityMapXamarin.Android.Views.Fragment
             navigationView = view.FindViewById<NavigationView>(Resource.Id.navigation_view);
             navigationView.SetNavigationItemSelectedListener(this);
             navigationView.Menu.FindItem(Resource.Id.nav_home).SetChecked(true);
-
-
             return view;
         }
 

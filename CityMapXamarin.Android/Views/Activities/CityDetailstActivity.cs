@@ -5,12 +5,13 @@ using Android.Widget;
 using CityMapXamarin.Android.Resources;
 using CityMapXamarin.ViewModels;
 using MvvmCross.Binding.BindingContext;
+using MvvmCross.Droid.Support.V7.AppCompat;
 using MvvmCross.Platforms.Android.Views;
 
 namespace CityMapXamarin.Android.Views.CityDetails
 {
     [Activity]
-    public class CityDetailsActivity : MvxActivity<CityDetailsViewModel>
+    public class CityDetailsActivity : MvxAppCompatActivity<CityDetailsViewModel>
     {
         private ImageView _imageViewCity;
         private TextView _textViewCity;

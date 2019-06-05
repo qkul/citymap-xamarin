@@ -70,6 +70,7 @@
     <Compile Include="Views\Cities\CityViewHolder.cs" />
     <Compile Include="Views\Activities\CityDetailstActivity.cs" />
     <Compile Include="Views\ConstView.cs" />
+    <Compile Include="Views\Fragment\BaseView.cs" />
     <Compile Include="Views\Fragment\SplitMasterView.cs" />
     <Compile Include="Views\MainPageView.cs" />
   </ItemGroup>
@@ -221,9 +222,16 @@
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Converters\" />
+  </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_setting.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\toolbar_actionbar.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
