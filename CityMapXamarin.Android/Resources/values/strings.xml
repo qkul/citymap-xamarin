@@ -4,4 +4,6 @@
 
     <string name="activity_cities_title">Cities</string>
     <string name="title_on_map">Maps</string>
+  <string name="drawer_open">Open</string>
+  <string name="drawer_close">Close</string>
 </resources>

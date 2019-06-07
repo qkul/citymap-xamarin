@@ -12,7 +12,7 @@ namespace CityMapXamarin.ViewModels
         public SplitMasterViewModel(IMvxNavigationService navigationService)
         {
             _navigationService = navigationService;
-            ShowRootViewModel = new MvxAsyncCommand(() => _navigationService.Navigate<MainPageViewModel>());
+            ShowRootViewModel = new MvxAsyncCommand(() => _navigationService.Navigate<SplitRootViewModel>());
         }
         public IMvxAsyncCommand ShowRootViewModel { get; private set; }
 

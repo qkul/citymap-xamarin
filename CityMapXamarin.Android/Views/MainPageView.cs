@@ -1,7 +1,5 @@
 ﻿using Android.App;
 using Android.OS;
-using Android.Support.V4.View;
-using Android.Support.V4.Widget;
 using Android.Support.V7.Widget;
 using Android.Widget;
 using CityMapXamarin.Android.Views.Cities;
@@ -17,15 +15,12 @@ namespace CityMapXamarin.Android.Views
 {
     [MvxActivityPresentation]
     [Activity(Label = "Cities")]
-    public class MainPageView : MvxAppCompatActivity <MainPageViewModel>
+    public class MainPageView : MvxAppCompatActivity<MainPageViewModel>
     {
-        
+
         private MvxRecyclerView _recyclerView;
         private Button _btnMap;
         private CityAdapter _adapter;
-        public DrawerLayout drawerLayout { get; set; }
-
-     
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -33,21 +28,9 @@ namespace CityMapXamarin.Android.Views
             _adapter = new CityAdapter((IMvxAndroidBindingContext)BindingContext);
             SetContentView(Resource.Layout.activity_cities);
             InitComponets();
-            if (bundle == null)
-            {
-                ViewModel.ShowInitialMenuCommand.Execute();
-            }
             AppBindings();
         }
-      
-           
-        public override void OnBackPressed()
-        {
-            if (drawerLayout != null && drawerLayout.IsDrawerOpen(GravityCompat.Start))
-                drawerLayout.CloseDrawers();
-            else
-                base.OnBackPressed();
-        }
+
         private void InitComponets()
         {
             var gridCount = Resources.GetInteger(Resource.Integer.grid_count);
@@ -57,7 +40,6 @@ namespace CityMapXamarin.Android.Views
             _recyclerView.SetLayoutManager(citiesLayoutManager);
             _recyclerView.Adapter = _adapter;
             _btnMap = FindViewById<Button>(Resource.Id.button_map_id);
-            drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
         }
 
         private void AppBindings()

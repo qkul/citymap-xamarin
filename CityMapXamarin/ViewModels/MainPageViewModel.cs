@@ -1,7 +1,6 @@
 ﻿using CityMapXamarin.Infrastructure;
 using CityMapXamarin.Models;
 using MvvmCross.Commands;
-using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -13,34 +12,20 @@ namespace CityMapXamarin.ViewModels
     {
         private readonly INavigationManager _navigationManager;
         private readonly ICityService _cityService;
-        private readonly IMvxNavigationService _navigationService;
 
         private IEnumerable<City> _cities;
         public IMvxAsyncCommand ShowSplitCommand { get; }
-        public  IMvxCommand NavigateToMapAsyncCommand  => new MvxAsyncCommand(DoNavigateToMapAsync);      
-        public IMvxCommand NavigateToCityAsyncCommand => new MvxAsyncCommand<City>(DoNavigateToCityAsync);
-        public IMvxAsyncCommand ShowInitialMenuCommand { get; private set; }
+        public IMvxCommand NavigateToMapAsyncCommand => new MvxAsyncCommand(DoNavigateToMapAsync);
 
+        public IMvxCommand NavigateToCityAsyncCommand => new MvxAsyncCommand<City>(DoNavigateToCityAsync);
        
 
-        public MainPageViewModel(IMvxNavigationService navigationService,INavigationManager navigationManager, ICityService cityService)
+        public MainPageViewModel(INavigationManager navigationManager, ICityService cityService)
         {
-            _navigationService = navigationService;
             _navigationManager = navigationManager;
             _cityService = cityService;
-            ShowInitialMenuCommand = new MvxAsyncCommand(ShowInitialViewModel);
         }
-        public override void ViewAppeared()
-        {
-            MvxNotifyTask.Create(async () =>
-            {
-                await ShowInitialViewModel();
-            });
-        }
-        private async Task ShowInitialViewModel()
-        {
-            await _navigationService.Navigate<SplitMasterViewModel>();
-        }
+
         public IEnumerable<City> Cities
         {
             get => _cities;
@@ -64,6 +49,7 @@ namespace CityMapXamarin.ViewModels
         }
 
 
+       
         private async Task DoNavigateToCityAsync(City city)
         {
             await _navigationManager.NavigateToCityAsync(city);
