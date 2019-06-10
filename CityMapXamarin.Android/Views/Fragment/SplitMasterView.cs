@@ -59,6 +59,9 @@ namespace CityMapXamarin.Android.Views.Fragment
                 case Resource.Id.nav_home:
                     ViewModel.ShowViewModelAndroid();
                     break;
+                case Resource.Id.nav_example:
+                    ViewModel.ShowExamplePage();
+                    break;
             }
         }
     }

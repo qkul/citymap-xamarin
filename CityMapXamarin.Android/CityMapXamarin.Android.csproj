@@ -73,6 +73,7 @@
     <Compile Include="Views\ConstView.cs" />
     <Compile Include="Views\Fragment\BaseView.cs" />
     <Compile Include="Views\Fragment\CitiesView.cs" />
+    <Compile Include="Views\Fragment\ExampleView.cs" />
     <Compile Include="Views\Fragment\SplitMasterView.cs" />
     <Compile Include="Views\MainPageView.cs" />
     <Compile Include="Views\SplitRootView.cs" />
@@ -237,6 +238,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\toolbar_actionbar.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\example_page.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

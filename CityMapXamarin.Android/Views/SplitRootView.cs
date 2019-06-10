@@ -4,6 +4,7 @@ using Android.Content.PM;
 using Android.OS;
 using Android.Support.V4.View;
 using Android.Support.V4.Widget;
+using Android.Views;
 using Android.Views.InputMethods;
 using CityMapXamarin.ViewModels;
 using MvvmCross.Droid.Support.V7.AppCompat;
@@ -32,9 +33,20 @@ namespace CityMapXamarin.Android.Views
 
             if (bundle == null)
             {
-                ViewModel.ShowInitialMenuCommand.Execute();
-                ViewModel.ShowCitiesCommand.Execute();
+                ViewModel.ShowInitialMenuCommand.Execute(null);
+                ViewModel.ShowCitiesCommand.Execute(null);
             }
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.nav_home:
+                    drawerLayout.OpenDrawer(GravityCompat.Start);
+                    return true;
+            }
+            return base.OnOptionsItemSelected(item);
         }
         public override void OnBackPressed()
         {

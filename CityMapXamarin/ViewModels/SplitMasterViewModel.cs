@@ -22,12 +22,17 @@ namespace CityMapXamarin.ViewModels
         }
         public void ShowViewModelAndroid()
         {
-            _navigationService.Navigate<SettingViewModel>();
+            _navigationService.Navigate<CitiesViewModel>();
         }
 
         public async Task ShowHome()
         {
-            await _navigationService.Navigate<SettingViewModel>();
+            await _navigationService.Navigate<CitiesViewModel>();
+        }
+
+        public void ShowExamplePage()
+        {
+            _navigationService.Navigate<ExamapleViewModel>();
         }
 
     }
