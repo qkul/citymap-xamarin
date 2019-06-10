@@ -12,7 +12,7 @@ using System.Collections.Generic;
 
 namespace CityMapXamarin.Android.Views.CitiesMap
 {
-    [Activity(Label = "CitiesMapActivity")]
+    [Activity(Label = "Map", Theme= "@style/AppThemeActionBar")]
     public class CitiesMapActivity : MvxAppCompatActivity<CitiesMapViewModel>, IOnMapReadyCallback
     {
         private GoogleMap _googleMap;

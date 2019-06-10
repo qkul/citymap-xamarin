@@ -4,13 +4,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <Button
-    android:id="@+id/button_menu"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
-    android:text="show page menu"
- /> 
+  <include
+    layout="@layout/toolbar_actionbar" />
   <Button
         android:text="Map"
         android:layout_width="match_parent"

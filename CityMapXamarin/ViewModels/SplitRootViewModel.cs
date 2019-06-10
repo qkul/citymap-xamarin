@@ -32,7 +32,7 @@ namespace CityMapXamarin.ViewModels
 
         private async Task ShowCitiesViewModel()
         {
-            await _navigationService.Navigate<CitiesViewModel>();
+            await _navigationService.Navigate<MainPageViewModel>();
 
         }
 
