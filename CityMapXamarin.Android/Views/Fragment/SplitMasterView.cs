@@ -33,7 +33,6 @@ namespace CityMapXamarin.Android.Views.Fragment
             navigationView.SetNavigationItemSelectedListener(this);
             navigationView.Menu.FindItem(Resource.Id.nav_home).SetChecked(true);
 
-
             return view;
         }
 
