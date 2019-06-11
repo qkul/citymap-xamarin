@@ -35,6 +35,7 @@
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
     <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -63,15 +64,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreenActivity.cs" />
-    <Compile Include="Views\Activities\SettingActivity.cs" />
     <Compile Include="Views\Activities\CitiesMapActivity.cs" />
     <Compile Include="Views\Cities\CityActivity.cs" />
     <Compile Include="Views\Cities\CityAdapter.cs" />
     <Compile Include="Views\Cities\CityViewHolder.cs" />
     <Compile Include="Views\Activities\CityDetailstActivity.cs" />
     <Compile Include="Views\ConstView.cs" />
+    <Compile Include="Views\Fragment\BaseView.cs" />
+    <Compile Include="Views\Fragment\CitiesView.cs" />
+    <Compile Include="Views\Fragment\ExampleView.cs" />
     <Compile Include="Views\Fragment\SplitMasterView.cs" />
-    <Compile Include="Views\MainPageView.cs" />
+    <Compile Include="Views\Fragment\MainPageView.cs" />
+    <Compile Include="Views\Activities\SplitRootView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -221,9 +225,23 @@
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SplitRootView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_setting.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\toolbar_actionbar.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\example_page.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

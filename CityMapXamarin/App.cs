@@ -24,7 +24,7 @@ namespace CityMapXamarin
             Mvx.LazyConstructAndRegisterSingleton<ICityService, CityService>();
             Mvx.LazyConstructAndRegisterSingleton<INavigationManager, NavigationManager>();
             Barrel.ApplicationId = "CityMapXamarin";
-            RegisterAppStart<MainPageViewModel>();
+            RegisterAppStart<SplitRootViewModel>();
         }
 
         public override Task Startup()
