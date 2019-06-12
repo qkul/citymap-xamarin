@@ -26,7 +26,7 @@ namespace CityMapXamarin.ViewModels
             MvxNotifyTask.Create(async () =>
             {
                 await ShowInitialViewModel();
-                await ShowCitiesViewModel();
+               // await ShowCitiesViewModel();
             });
         }
 

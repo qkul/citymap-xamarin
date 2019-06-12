@@ -11,9 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button_map_id"/>
+	<MvxSwipeRefreshLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    local:MvxBind="Refreshing IsBusy; RefreshCommand RefreshCommand">
 	<MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
         android:id="@+id/recycler_view_cities_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="10dp"/>
+		</MvxSwipeRefreshLayout>
 </LinearLayout>

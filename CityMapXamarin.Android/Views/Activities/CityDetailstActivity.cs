@@ -21,9 +21,20 @@ namespace CityMapXamarin.Android.Views.CityDetails
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_city_details);
             InitComponets();
+            SetupToolbar();
             AppBindings();
         }
-
+        public override bool OnSupportNavigateUp()
+        {
+            OnBackPressed();
+            return true;
+        }
+        private void SetupToolbar()
+        {
+            var contraction = SupportActionBar;
+            contraction.SetDisplayHomeAsUpEnabled(true);
+            contraction.SetDisplayShowHomeEnabled(true);
+        }
         private void InitComponets()
         {
             _imageViewCity = FindViewById<ImageView>(Resource.Id.image_city_details);

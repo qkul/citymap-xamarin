@@ -5,6 +5,7 @@ using MvvmCross.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace CityMapXamarin.ViewModels
 {
@@ -18,12 +19,14 @@ namespace CityMapXamarin.ViewModels
         public IMvxCommand NavigateToMapAsyncCommand => new MvxAsyncCommand(DoNavigateToMapAsync);
 
         public IMvxCommand NavigateToCityAsyncCommand => new MvxAsyncCommand<City>(DoNavigateToCityAsync);
-       
+
+
 
         public MainPageViewModel(INavigationManager navigationManager, ICityService cityService)
         {
             _navigationManager = navigationManager;
             _cityService = cityService;
+
         }
 
         public IEnumerable<City> Cities
@@ -35,11 +38,31 @@ namespace CityMapXamarin.ViewModels
                 RaisePropertyChanged(() => Cities);
             }
         }
+        //
+        private IMvxAsyncCommand _refreshCommand;
+        public IMvxAsyncCommand RefreshCommand
+            => _refreshCommand ?? (_refreshCommand = new MvxAsyncCommand(ExecuteRefreshCommand));
 
+        private bool _isBusy;
+        public bool IsBusy
+        {
+            get => _isBusy;
+            set => SetProperty(ref _isBusy, value);
+        }
+
+        private async Task ExecuteRefreshCommand()
+        {
+            IsBusy = true;
+            Cities = await _cityService.LoadCitiesAsync();
+            IsBusy = false;
+        }
+        //
         public override async void ViewCreated()
         {
+            IsBusy = true;
             base.ViewCreated();
             Cities = await _cityService.LoadCitiesAsync();
+            IsBusy = false;
         }
 
 

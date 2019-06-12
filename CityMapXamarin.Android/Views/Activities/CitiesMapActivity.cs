@@ -21,19 +21,12 @@ namespace CityMapXamarin.Android.Views.CitiesMap
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            AppBindings();
-            SetContentView(Resource.Layout.activity_map);           
+            AppBindings();    
+            SetContentView(Resource.Layout.activity_map);
+            SetupToolbar();
             SetupMap();
         }
-
-  
-        private void AppBindings()
-        {
-            var set = this.CreateBindingSet<CitiesMapActivity, CitiesMapViewModel>();
-            set.Bind(this).For(c=>c.NewCities).To(vm => vm.Cities);
-            set.Apply();
-        }
-
+      
         public void OnMapReady(GoogleMap googleMap)
         {
             _googleMap = googleMap;
@@ -47,6 +40,26 @@ namespace CityMapXamarin.Android.Views.CitiesMap
                     .SetTitle(city.Title));
             }
         }
+        public override bool OnSupportNavigateUp()
+        {
+            OnBackPressed();
+            return true;
+        }
+        private void SetupToolbar()
+        {
+            var contraction = SupportActionBar;
+            contraction.SetDisplayHomeAsUpEnabled(true);
+            contraction.SetDisplayShowHomeEnabled(true);
+        }
+       
+        private void AppBindings()
+        {
+            var set = this.CreateBindingSet<CitiesMapActivity, CitiesMapViewModel>();
+            set.Bind(this).For(c=>c.NewCities).To(vm => vm.Cities);
+            set.Apply();
+        }
+
+        
         private void SetupMap()
         {
             //var mapFragment = (SupportMapFragment)SupportFragmentManager.FindFragmentById(Resource.Id.map);

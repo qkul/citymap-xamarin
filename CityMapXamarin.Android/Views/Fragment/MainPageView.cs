@@ -25,10 +25,12 @@ namespace CityMapXamarin.Android.Views
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             var view = base.OnCreateView(inflater, container, savedInstanceState);
+            ParentActivity.SupportActionBar.Title = "Cities";
             InitComponents(view);
             AppBindings();  
             return view;
         }
+  
 
         private void InitComponents(View view)
         {
@@ -52,6 +54,5 @@ namespace CityMapXamarin.Android.Views
             set.Bind(_btnMap).To(vm => vm.NavigateToMapAsyncCommand);
             set.Apply();
         }
-
     }
 }
